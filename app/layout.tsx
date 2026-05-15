@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Depagel Group s.r.l.",
   description: "",
   icons: {
-    icon: "/logo.ico",
+    icon: "/logo.pmg",
   },
 };
 
