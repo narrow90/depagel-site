@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 const myFont = localFont({
   src: "./fonts/Baloo-Regular.ttf",
@@ -30,6 +31,7 @@ export default function RootLayout({
     {children}
     <Footer />
   </div>
+  <ScrollToTop />
 </body>
     </html>
   );
