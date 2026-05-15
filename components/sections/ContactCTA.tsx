@@ -19,27 +19,29 @@ export default function ContactCTA() {
               sull’azienda, sui prodotti e sulle soluzioni dedicate al tuo business.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="mailto:giuseppe.salerno@depagelgroup.com"
-                className=" rounded-full items-center justify-center bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
-              >
-                E-Mail
-              </Link>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+  <Link
+    href="mailto:info@depagelgroup.com"
+    className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
+  >
+    E-Mail
+  </Link>
 
-              <Link
-                href="https://wa.me/393758596044"
-                className=" rounded-full items-center justify-center bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
-              >
-                Whatsapp
-              </Link>
+  <Link
+    href="https://wa.me/393318082957"
+    target="_blank"
+    className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
+  >
+    Whatsapp
+  </Link>
 
-              <Link
-                href="/prodotti"
-                className=" rounded-full items-center justify-center bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
-              >
-                Scopri i prodotti
-              </Link>
+  <Link
+    href="#prodotti"
+    className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
+  >
+    Scopri i prodotti
+  </Link>
+</div>
             </div>
           </div>
         </div>
