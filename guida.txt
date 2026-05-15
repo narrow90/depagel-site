@@ -1,0 +1,17 @@
+1
+npm run dev 
+per vedere errori oppure tutto ok
+
+http://localhost:3002
+
+2
+git add . 
+salva modifiche su git
+
+3
+git commit -m "update"
+crea commit
+
+4
+git push
+pubblica
