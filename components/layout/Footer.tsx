@@ -53,19 +53,19 @@ export default function Footer() {
 
       <ul className="mt-6 space-y-5 text-sm text-[#334155]">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/#home">Home</Link>
         </li>
 
         <li>
-          <Link href="/azienda">Azienda</Link>
+          <Link href="/#azienda">Azienda</Link>
         </li>
 
         <li>
-          <Link href="/prodotti">Prodotti</Link>
+          <Link href="/#prodotti">Prodotti</Link>
         </li>
 
         <li>
-          <Link href="/contatti">Contatti</Link>
+          <Link href="/#contatti">Contatti</Link>
         </li>
       </ul>
     </div>

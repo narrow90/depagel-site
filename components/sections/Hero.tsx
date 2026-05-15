@@ -33,7 +33,7 @@ export default function Hero() {
             </Link>
 
             <Link
-              href="/contatti"
+              href="#contatti"
               className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
             >
               Contattaci

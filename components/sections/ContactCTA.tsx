@@ -39,10 +39,10 @@ export default function ContactCTA() {
               </Link>
 
               <Link
-                href="#prodotti"
+                href=""
                 className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
               >
-                Scopri i prodotti
+                Lavora con noi
               </Link>
             </div>
 

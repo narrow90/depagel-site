@@ -5,10 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#azienda", label: "Azienda" },
-  { href: "#prodotti", label: "Prodotti" },
-  { href: "#contatti", label: "Contatti" },
+  { href: "/#home", label: "Home" },
+  { href: "/#azienda", label: "Azienda" },
+  { href: "/#prodotti", label: "Prodotti" },
+  { href: "/#qualita", label: "Qualità" },
+  { href: "/#contatti", label: "Contatti" },
 ];
 
 export default function Header() {
@@ -22,7 +23,7 @@ export default function Header() {
           type="button"
           aria-label="Apri menu"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#b8dcec] bg-white/40 text-[#0F1720] lg:hidden"
+          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#b8dcec] bg-white/40 text-[#51606F] lg:hidden"
         >
           <span className="text-xl leading-none">{isOpen ? "×" : "☰"}</span>
         </button>
@@ -76,7 +77,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="border-b border-[#b8dcec] py-4 text-sm font-medium text-[#334155] last:border-b-0"
+                className="border-b border-[#b8dcec] py-4 text-sm font-regular text-[#334155] last:border-b-0"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

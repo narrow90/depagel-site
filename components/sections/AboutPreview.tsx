@@ -59,9 +59,7 @@ export default function AboutPreview() {
               className="rounded-[1.5rem] border border-[#D9EAF5] bg-[#F6FBFE] p-6 shadow-sm"
             >
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#046DB6] text-sm font-regular text-white">
-                  0{index + 1}
-                </div>
+                
 
                 <div>
                   <h3 className="text-lg font-regular text-[#51606F]">

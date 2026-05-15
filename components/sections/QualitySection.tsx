@@ -44,11 +44,11 @@ export default function QualitySection() {
         </div>
 
         <div>
-          <span className="inline-block rounded-full border border-[#D9EAF5] bg-[#F6FBFE] px-4 py-1.5 text-sm font-medium text-[#046DB6]">
+          <span className="inline-block rounded-full border border-[#D9EAF5] bg-[#F6FBFE] px-4 py-1.5 text-sm font-regular text-[#046DB6]">
             Qualità
           </span>
 
-          <h2 className="mt-5 text-3xl font-regular tracking-tight text-[#0F1720] sm:text-4xl">
+          <h2 className="mt-5 text-3xl font-regular tracking-tight text-[#51606F] sm:text-4xl">
             Una produzione orientata alla qualità del risultato
           </h2>
 
@@ -69,7 +69,7 @@ export default function QualitySection() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-regular text-[#0F1720]">
+                    <h3 className="text-lg font-regular text-[#51606F]">
                       {point.title}
                     </h3>
 
