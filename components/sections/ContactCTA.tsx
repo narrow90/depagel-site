@@ -22,21 +22,21 @@ export default function ContactCTA() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="mailto:giuseppe.salerno@depagelgroup.com"
-                className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+                className=" rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
               >
                 E-Mail
               </Link>
 
               <Link
                 href="https://wa.me/393758596044"
-                className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+                className=" rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
               >
                 Whatsapp
               </Link>
 
               <Link
                 href="/prodotti"
-                className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+                className=" rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
               >
                 Scopri i prodotti
               </Link>
