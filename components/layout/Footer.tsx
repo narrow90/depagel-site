@@ -30,7 +30,7 @@ export default function Footer() {
 
       <ul className="mt-6 space-y-5 text-sm leading-7 text-[#334155]">
         <li>
-          Via Padre Zeferino Ingenitio, 7
+          Via Padre Zeferino Ingenito, 7
           <br />
           Macchia - M. Rovella - SA
         </li>
