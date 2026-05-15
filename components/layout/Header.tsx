@@ -15,7 +15,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#7fc8ee]/50 bg-[linear-gradient(90deg,#046DB6_0%,#2995d6_10%,#D1F0FC_100%)] backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-[#7fc8ee]/50 bg-[linear-gradient(90deg,#046DB6_0%,#D1F0FC_100%)] backdrop-blur-md">
       <div className="relative mx-auto flex h-24 max-w-7xl items-center justify-between px-5 md:px-10">
         {/* MOBILE BUTTON */}
         <button
