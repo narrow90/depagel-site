@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     
     <section id="home" className="relative overflow-hidden bg-transparent scroll-mt-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(210,236,249,0.85),_transparent_38%)]" />
+      <div className="absolute inset-0 " />
 
       <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-16 md:px-10 lg:grid-cols-2 lg:py-24">
         <div className="max-w-xl">
