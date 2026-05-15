@@ -27,14 +27,14 @@ export default function Hero() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
               href="/prodotti"
-              className="inline-flex items-center justify-center rounded-2xl bg-[#046DB6] px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95]"
+              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
             >
               Scopri i prodotti
             </Link>
 
             <Link
               href="/contatti"
-              className="inline-flex items-center justify-center rounded-2xl border border-[#D9EAF5] bg-white px-6 py-3.5 text-base font-semibold text-[#0F1720] transition hover:bg-[#F6FBFE]"
+              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
             >
               Contattaci
             </Link>
