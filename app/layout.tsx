@@ -13,6 +13,9 @@ const myFont = localFont({
 export const metadata: Metadata = {
   title: "Depagel Group",
   description: "Produzione dolciaria professionale",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

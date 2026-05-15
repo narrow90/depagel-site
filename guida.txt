@@ -15,3 +15,6 @@ crea commit
 4
 git push
 pubblica
+
+per cambiare da dev a main
+git checkout main
