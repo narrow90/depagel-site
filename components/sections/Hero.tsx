@@ -11,14 +11,14 @@ export default function Hero() {
         <div className="max-w-xl">
           
 
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-[#0F1720] sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-regular leading-tight tracking-tight text-[#51606F] sm:text-5xl lg:text-6xl">
             Il made in italy secondo
             <span className="block text-[#046DB6]">
               Depagel Group
             </span>
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-[#51606F] sm:text-xl">
+          <p className="mt-6 text-lg leading-8 text-[#7e8994] sm:text-xl">
             Produciamo semilavorati da forno pensati per bar, hotel e distribuzione,
             con attenzione alla qualità, alla continuità e al
             valore del prodotto.
@@ -27,14 +27,14 @@ export default function Hero() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
               href="/prodotti"
-              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
             >
               Scopri i prodotti
             </Link>
 
             <Link
               href="/contatti"
-              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
             >
               Contattaci
             </Link>
@@ -46,8 +46,8 @@ export default function Hero() {
                 key={item}
                 className="rounded-2xl border border-[#D9EAF5] bg-white p-4 shadow-sm"
               >
-                <p className="text-sm font-semibold text-[#046DB6]">{item}</p>
-                <p className="mt-1 text-sm text-[#51606F]">
+                <p className="text-sm font-regular text-[#046DB6]">{item}</p>
+                <p className="mt-1 text-sm text-[#7e8994]">
                   Soluzioni dolciarie per clienti professionali
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function Hero() {
 
     {/* Testo sopra la sfumatura */}
     <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-      <h2 className="text-2xl font-semibold text-white drop-shadow-md sm:text-3xl">
+      <h2 className="text-2xl font-regular text-white drop-shadow-md sm:text-3xl">
         Qualità pensata per te
       </h2>
     </div>

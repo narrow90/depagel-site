@@ -24,7 +24,7 @@ export default function Footer() {
 
     {/* CENTER */}
     <div className="flex flex-col items-center text-center">
-      <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-[#046DB6]">
+      <h3 className="text-sm font-regular uppercase tracking-[0.22em] text-[#046DB6]">
         Contatti
       </h3>
 
@@ -35,7 +35,7 @@ export default function Footer() {
           Macchia - M. Rovella - SA
         </li>
 
-        <li>+39 331 8082957</li>
+        <li>+39 375 8596044</li>
 
         <li>giuseppe.salerno@depagelgroup.com</li>
 
@@ -47,7 +47,7 @@ export default function Footer() {
 
     {/* RIGHT */}
     <div className="flex flex-col items-center text-center">
-      <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-[#046DB6]">
+      <h3 className="text-sm font-regular uppercase tracking-[0.22em] text-[#046DB6]">
         Navigazione
       </h3>
 

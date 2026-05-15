@@ -15,7 +15,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#7fc8ee]/50 bg-[linear-gradient(90deg,#046DB6_0%,#D1F0FC_100%)] backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-[#7fc8ee]/50 bg-[linear-gradient(90deg,#046DB6_0%,#2995d6_25%,#D1F0FC_60%)] backdrop-blur-md">
       <div className="relative mx-auto flex h-24 max-w-7xl items-center justify-between px-5 md:px-10">
         {/* MOBILE BUTTON */}
         <button
@@ -33,7 +33,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-[15px] font-medium text-[#334155] transition hover:text-[#046DB6]"
+              className="text-[15px] font-regular text-white transition hover:text-[#046DB6]"
             >
               {link.label}
             </Link>
@@ -59,7 +59,7 @@ export default function Header() {
         {/* RIGHT CTA DESKTOP */}
         <Link
           href="/prodotti"
-          className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+          className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
         >
           Catalogo prodotti
         </Link>
@@ -85,7 +85,7 @@ export default function Header() {
 
             <Link
               href="/prodotti"
-              className="mt-4 inline-flex justify-center rounded-full bg-[#046DB6] px-6 py-3 text-sm font-semibold text-white"
+              className="mt-4 inline-flex justify-center rounded-full bg-[#046DB6] px-6 py-3 text-sm font-regular text-white"
               onClick={() => setIsOpen(false)}
             >
               Catalogo prodotti

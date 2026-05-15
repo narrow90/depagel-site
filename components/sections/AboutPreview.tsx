@@ -23,21 +23,21 @@ export default function AboutPreview() {
     <section id="azienda" className="bg-transparent py-20 sm:py-24 scroll-mt-24">
       <div className="mx-auto grid max-w-7xl gap-14 px-6 md:px-10 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <span className="inline-block rounded-full border border-[#D9EAF5] bg-[#F6FBFE] px-4 py-1.5 text-sm font-medium text-[#046DB6]">
+          <span className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex">
             L’azienda
           </span>
 
-          <h2 className="mt-5 max-w-2xl text-3xl font-bold tracking-tight text-[#0F1720] sm:text-4xl">
+          <h2 className="mt-5 max-w-2xl text-3xl font-regular tracking-tight text-[#51606F] sm:text-4xl">
             Una produzione costruita su qualità e continuità
           </h2>
 
-          <p className="mt-6 max-w-2xl text-base leading-8 text-[#51606F] sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-8 text-[#7e8994] sm:text-lg">
             Siamo una realtà specializzata nella produzione dolciaria
             professionale, con un’offerta sviluppata per supportare le esigenze
             del settore horeca e della distribuzione.
           </p>
 
-          <p className="mt-4 max-w-2xl text-base leading-8 text-[#51606F] sm:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-8 text-[#7e8994] sm:text-lg">
             Il nostro obiettivo è offrire prodotti riconoscibili, affidabili e
             adatti a valorizzare la proposta del cliente finale.
           </p>
@@ -45,7 +45,7 @@ export default function AboutPreview() {
           <div className="mt-8">
             <Link
               href="/azienda"
-              className="inline-flex items-center justify-center rounded-2xl border border-[#D9EAF5] bg-white px-6 py-3.5 text-sm font-semibold text-[#0F1720] transition hover:bg-[#F6FBFE]"
+              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
             >
               Scopri l’azienda
             </Link>
@@ -59,16 +59,16 @@ export default function AboutPreview() {
               className="rounded-[1.5rem] border border-[#D9EAF5] bg-[#F6FBFE] p-6 shadow-sm"
             >
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#046DB6] text-sm font-semibold text-white">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#046DB6] text-sm font-regular text-white">
                   0{index + 1}
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-[#0F1720]">
+                  <h3 className="text-lg font-regular text-[#51606F]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-2 text-sm leading-7 text-[#51606F] sm:text-base">
+                  <p className="mt-2 text-sm leading-7 text-[#7e8994] sm:text-base">
                     {item.description}
                   </p>
                 </div>
@@ -77,15 +77,15 @@ export default function AboutPreview() {
           ))}
 
           <div className="rounded-[1.5rem] border border-[#D9EAF5] bg-[#046DB6] p-6 shadow-sm">
-            <p className="text-sm uppercase tracking-[0.18em] text-white/70">
+            <p className="text-sm uppercase tracking-[0.18em] text-white">
               Visione
             </p>
 
-            <h3 className="mt-3 text-2xl font-semibold text-white">
+            <h3 className="mt-3 text-2xl font-regular text-white">
               Un partner affidabile per il settore professionale
             </h3>
 
-            <p className="mt-3 text-sm leading-7 text-[#D2ECF9] sm:text-base">
+            <p className="mt-3 text-sm leading-7 text-white sm:text-base">
               Costruiamo una proposta dolciaria pensata per garantire qualità
               percepita, continuità produttiva e valore commerciale.
             </p>
