@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function Footer() {
   return (
     <footer className="border-t-[3px] border-[#046DB6] bg-transparent backdrop-blur-sm">
@@ -30,14 +31,31 @@ export default function Footer() {
 
       <ul className="mt-6 space-y-5 text-sm leading-7 text-[#334155]">
         <li>
-          Via Padre Zeferino Ingenito, 7
-          <br />
-          Macchia - M. Rovella - SA
+         <Link
+  href="https://maps.google.com/?q=Via Padre Zeferino Ingenito 7 Macchia Montecorvino Rovella SA"
+  target="_blank"
+  className="transition hover:text-[#046DB6]"
+>
+  Via Padre Zeferino Ingenito, 7<br />
+  Macchia - Montecorvino Rovella (SA)
+</Link>
         </li>
 
-        <li>+39 375 8596044</li>
+        <li><Link
+  href="tel:+393758596044"
+  target="_blank"
+  className="transition hover:text-[#046DB6]"
+>
+  +39 375 8596044
+</Link></li>
 
-        <li>giuseppe.salerno@depagelgroup.com</li>
+        <li><Link
+  href="mailto:amministrazione@depagelgroup.com"
+  target="_blank"
+  className="transition hover:text-[#046DB6]"
+>
+  amministrazione@depagelgroup.com
+</Link></li>
 
         <li>P.IVA 06226990650</li>
 
