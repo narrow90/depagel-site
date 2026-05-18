@@ -20,13 +20,17 @@ export default function Header() {
       <div className="relative mx-auto flex h-24 max-w-7xl items-center justify-between px-5 md:px-10">
         {/* MOBILE BUTTON */}
         <button
-          type="button"
-          aria-label="Apri menu"
-          onClick={() => setIsOpen((prev) => !prev)}
-          className="z-20 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#b8dcec] bg-white/40 text-[#51606F] lg:hidden"
-        >
-          <span className="text-xl leading-none">{isOpen ? "×" : "☰"}</span>
-        </button>
+  type="button"
+  aria-label="Apri menu"
+  onClick={() => setIsOpen((prev) => !prev)}
+  className="z-20 flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+>
+  <span className="h-[2px] w-6 rounded-full bg-white transition-all" />
+
+  <span className="h-[2px] w-6 rounded-full bg-white transition-all" />
+
+  <span className="h-[2px] w-6 rounded-full bg-white transition-all" />
+</button>
 
         {/* LEFT MENU DESKTOP */}
         <nav className="hidden items-center gap-8 lg:flex">
@@ -59,7 +63,7 @@ export default function Header() {
 
         {/* RIGHT CTA DESKTOP */}
         <Link
-          href="/prodotti"
+          href="#"
           className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
         >
           Catalogo prodotti
@@ -85,7 +89,7 @@ export default function Header() {
             ))}
 
             <Link
-              href="/prodotti"
+              href="#"
               className="mt-4 inline-flex justify-center rounded-full bg-[#046DB6] px-6 py-3 text-sm font-regular text-white"
               onClick={() => setIsOpen(false)}
             >
