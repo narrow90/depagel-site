@@ -32,7 +32,7 @@ export default function Footer() {
       <ul className="mt-6 space-y-5 text-sm leading-7 text-[#334155]">
         <li>
          <Link
-  href="https://maps.google.com/?q=Via Padre Zeferino Ingenito 7 Macchia Montecorvino Rovella SA"
+  href="https://maps.app.goo.gl/bA6EeB9jMLTysXYG7"
   target="_blank"
   className="transition hover:text-[#046DB6]"
 >
