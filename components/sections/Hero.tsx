@@ -5,10 +5,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const heroImages = [
-  "/images/hero/hero-1.jpg",
-  "/images/hero/hero-2.jpg",
-  "/images/hero/hero-3.jpg",
-  "/images/hero/hero-4.jpg",
+  "/images/DSC_0013.JPG",
+  "/images/DSC_0055.JPG",
+  "/images/DSC_0084.JPG",
+  "/images/DSC_0143.JPG",
 ];
 
 export default function Hero() {
