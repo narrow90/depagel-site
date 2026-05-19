@@ -1,9 +1,33 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const heroImages = [
+  "/images/hero/hero-1.jpg",
+  "/images/hero/hero-2.jpg",
+  "/images/hero/hero-3.jpg",
+  "/images/hero/hero-4.jpg",
+];
 
 export default function Hero() {
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) =>
+        prev === heroImages.length - 1 ? 0 : prev + 1
+      );
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    
+ 
+
     <section id="home" className="relative overflow-hidden bg-transparent scroll-mt-24">
       <div className="absolute inset-0 " />
 
@@ -58,13 +82,13 @@ export default function Hero() {
         <div className="relative">
   <div className="relative overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white shadow-[0_20px_60px_rgba(4,109,182,0.12)]">
     <Image
-      src="/images/DSC_0055.JPG"
-      alt="lavorazione"
-      width={900}
-      height={1100}
-      priority
-      className="h-[420px] w-full object-cover brightness-150 sm:h-[520px] lg:h-[680px]"
-    />
+  src={heroImages[currentImage]}
+  alt="Lavorazione prodotti dolciari"
+  width={900}
+  height={1100}
+  priority
+  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[520px] lg:h-[680px]"
+/>
 
     {/* Sfumatura solo in basso */}
     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#046DB6]/60 to-transparent" />
