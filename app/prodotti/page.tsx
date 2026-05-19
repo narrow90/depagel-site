@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useMemo, useState } from "react";
 
 const categories = [
   {
@@ -56,6 +59,36 @@ const products = [
 ];
 
 export default function ProdottiPage() {
+  const [search, setSearch] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("Tutti");
+  const [sort, setSort] = useState("default");
+
+  const filteredProducts = useMemo(() => {
+    let result = products.filter((product) => {
+      const matchesSearch = product.name
+        .toLowerCase()
+        .includes(search.toLowerCase());
+
+      const matchesCategory =
+        selectedCategory === "Tutti" ||
+        product.category.includes(selectedCategory);
+
+      return matchesSearch && matchesCategory;
+    });
+
+    if (sort === "az") {
+      result = [...result].sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    if (sort === "category") {
+      result = [...result].sort((a, b) =>
+        a.category.localeCompare(b.category)
+      );
+    }
+
+    return result;
+  }, [search, selectedCategory, sort]);
+
   return (
     <main className="bg-white/70 backdrop-blur-sm">
       <section className="mx-auto max-w-7xl px-6 py-12 md:px-10 lg:py-16">
@@ -68,6 +101,8 @@ export default function ProdottiPage() {
             <div className="mt-6 flex items-center rounded-xl border border-[#D9EAF5] bg-white px-4 py-3">
               <input
                 type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 placeholder="Cerca un prodotto"
                 className="w-full bg-transparent text-sm text-[#334155] outline-none placeholder:text-[#94A3B8]"
               />
@@ -80,28 +115,54 @@ export default function ProdottiPage() {
               Categorie prodotto
             </h3>
 
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedCategory("Tutti");
+                setSearch("");
+                setSort("default");
+              }}
+              className="mt-4 text-sm font-medium text-[#046DB6] hover:underline"
+            >
+              Mostra tutti
+            </button>
+
             <div className="mt-6 space-y-4 text-sm">
               {categories.map((category) => (
                 <div key={category.name}>
-                  <div className="flex items-center justify-between font-regular text-[#51606F]">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedCategory(category.name)}
+                    className={`flex w-full items-center justify-between font-semibold transition ${
+                      selectedCategory === category.name
+                        ? "text-[#046DB6]"
+                        : "text-[#0F1720] hover:text-[#046DB6]"
+                    }`}
+                  >
                     <span>{category.name}</span>
                     <span className="rounded-full bg-[#046DB6] px-2.5 py-1 text-xs text-white">
                       {category.count}
                     </span>
-                  </div>
+                  </button>
 
                   {"children" in category && category.children && (
                     <div className="mt-3 space-y-3 pl-4 text-[#7e8994]">
                       {category.children.map((child) => (
-                        <div
+                        <button
                           key={child.name}
-                          className="flex items-center justify-between"
+                          type="button"
+                          onClick={() => setSelectedCategory(child.name)}
+                          className={`flex w-full items-center justify-between transition ${
+                            selectedCategory === child.name
+                              ? "text-[#046DB6]"
+                              : "text-[#51606F] hover:text-[#046DB6]"
+                          }`}
                         >
                           <span>{child.name}</span>
                           <span className="rounded-full border border-[#D9EAF5] bg-white px-2.5 py-0.5 text-xs text-[#51606F]">
                             {child.count}
                           </span>
-                        </div>
+                        </button>
                       ))}
                     </div>
                   )}
@@ -117,22 +178,33 @@ export default function ProdottiPage() {
                   Home
                 </Link>
                 <span className="mx-2">/</span>
-                <span className="font-regular text-[#51606F]">
-                  Prodotti
-                </span>
+                <span className="font-normal text-[#51606F]">Prodotti</span>
               </div>
 
-              <select className="rounded-xl border border-[#D9EAF5] bg-white px-4 py-2 text-sm outline-none">
-                <option>Default sorting</option>
-                <option>Nome A-Z</option>
-                <option>Categoria</option>
-              </select>
+              <div className="flex flex-wrap items-center gap-4">
+                <span className="text-sm text-[#51606F]">
+                  Risultati:{" "}
+                  <strong className="text-[#046DB6]">
+                    {filteredProducts.length}
+                  </strong>
+                </span>
+
+                <select
+                  value={sort}
+                  onChange={(e) => setSort(e.target.value)}
+                  className="rounded-xl border border-[#D9EAF5] bg-white px-4 py-2 text-sm text-[#51606F] outline-none"
+                >
+                  <option value="default">Default sorting</option>
+                  <option value="az">Nome A-Z</option>
+                  <option value="category">Categoria</option>
+                </select>
+              </div>
             </div>
 
             <div className="grid overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/90 shadow-sm sm:grid-cols-2 lg:grid-cols-3">
-              {products.map((product) => (
+              {filteredProducts.map((product) => (
                 <Link key={product.slug} href={`/prodotti/${product.slug}`}>
-                  <article className="group border-b border-r border-[#D9EAF5] p-8 text-center transition hover:bg-[#F6FBFE]">
+                  <article className="group h-full border-b border-r border-[#D9EAF5] p-8 text-center transition hover:bg-[#F6FBFE]">
                     <div className="relative mx-auto h-52 w-full">
                       <Image
                         src={product.image}
@@ -142,7 +214,7 @@ export default function ProdottiPage() {
                       />
                     </div>
 
-                    <h3 className="mt-8 text-base font-regular text-[#51606F]">
+                    <h3 className="mt-8 text-base font-normal text-[#51606F]">
                       {product.name}
                     </h3>
 
@@ -152,6 +224,12 @@ export default function ProdottiPage() {
                   </article>
                 </Link>
               ))}
+
+              {filteredProducts.length === 0 && (
+                <div className="col-span-full p-10 text-center text-sm text-[#51606F]">
+                  Nessun prodotto trovato.
+                </div>
+              )}
             </div>
           </div>
         </div>
