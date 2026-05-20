@@ -18,10 +18,7 @@ const sections = [
   },
   {
   title: "I nostri numeri e la tecnologia",
-  description: `<p>
-      L’evoluzione del mercato ha portato Depagel Group a investire costantemente in ricerca, innovazione e sviluppo di nuove referenze, con l’obiettivo di offrire soluzioni moderne, affidabili e performanti dedicate al settore professionale.
-    </p>
-
+  description: `
     <ul class="mt-6 space-y-3">
       <li><strong>Sede produttiva:</strong> 1.170 mq complessivi.</li>
 
