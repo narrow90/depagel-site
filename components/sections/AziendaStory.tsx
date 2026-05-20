@@ -2,30 +2,41 @@ import Image from "next/image";
 
 const sections = [
   {
-    title: "Le origini dell’azienda",
+    title: "Le origini:",
     description:
-      "Depagel Group nasce dall’esperienza nel settore dei semilavorati da forno e dalla volontà di creare prodotti professionali affidabili, pensati per rispondere alle esigenze del mercato horeca e della distribuzione moderna.",
+      "Nata dalla forte passione dei soci fondatori, la nostra azienda muove i primi passi in una piccolissima realtà di poche decine di metri quadri. Nati per soddisfare il piacere personale e una cerchia ristretta di clienti selezionati, i nostri prodotti hanno conquistato in brevissimo tempo una platea molto più ampia ed esigente.",
     image: "/images/storia-1.jpg",
     reverse: false,
   },
   {
-    title: "Una crescita costruita sulla qualità",
+    title: "L’evoluzione:",
     description:
-      "Negli anni l’azienda ha sviluppato un processo produttivo organizzato e orientato alla continuità del risultato, mantenendo sempre attenzione alla qualità delle materie prime e alla resa finale del prodotto.",
+      "Questa crescita costante ci ha permesso di evolverci nella struttura odierna. Oggi uniamo la manualità e la passione artigianale del passato a una forte spinta verso l'innovazione tecnologica, raggiungendo volumi di produzione di tutto rispetto.",
     image: "/images/storia-2.jpg",
     reverse: true,
   },
   {
-    title: "Innovazione e sviluppo continuo",
-    description:
-      "L’evoluzione del mercato ha portato Depagel Group a investire in ricerca, innovazione e sviluppo di nuove referenze, con l’obiettivo di offrire soluzioni moderne e performanti per il settore professionale.",
-    image: "/images/storia-3.jpg",
-    reverse: false,
-  },
+  title: "I nostri numeri e la tecnologia:",
+  description: `
+    <p>
+      L’evoluzione del mercato ha portato Depagel Group a investire in ricerca, innovazione e sviluppo di nuove referenze, con l’obiettivo di offrire soluzioni moderne e performanti per il settore professionale.
+    </p>
+
+    <ul>
+      <li><strong>Sede:</strong> 1.170 mq totali.</li>
+      <li><strong>Produzione:</strong> Reparto all'avanguardia di circa 550 mq.</li>
+      <li><strong>Lievitazione:</strong> Camera da 170 m³ a temperatura e umidità controllata.</li>
+      <li><strong>Conservazione:</strong> 350 m³ di celle a -18°.</li>
+      <li><strong>Abbattimento:</strong> Cella abbattitore da 78 m³ (40 kW), in grado di surgelare il prodotto fresco in meno di un'ora.</li>
+    </ul>
+  `,
+  image: "/images/storia-3.jpg",
+  reverse: false,
+},
   {
-    title: "Uno sguardo rivolto al futuro",
+    title: "Qualità e Logistica:",
     description:
-      "Oggi l’azienda continua il proprio percorso con una visione orientata alla crescita, alla qualità percepita e alla costruzione di partnership solide e durature con i propri clienti.",
+      "Siamo certificati HACCP per garantire i massimi standard di sicurezza alimentare ai nostri clienti. Grazie alla nostra rete di distribuzione capillare, garantiamo consegne puntuali e nel rispetto della cold chain in tutta la Campania, nel Sud Italia e in Sicilia. Ma servendoci delle consolidate partnership con piattaforme di spedizione possiamo arrivare ovunque voi abbiate richiesta. ",
     image: "/images/storia-4.jpg",
     reverse: true,
   },
@@ -44,12 +55,11 @@ export default function AziendaPage() {
           </span>
 
           <h1 className="mx-auto mt-8 max-w-5xl text-4xl font-regular leading-tight tracking-tight text-[#51606F] sm:text-5xl lg:text-6xl">
-            Un percorso costruito su esperienza, qualità e continuità
+            Depagel Group S.r.l. 
           </h1>
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-[#7e8994] sm:text-xl">
-            Una realtà produttiva che negli anni ha sviluppato un’identità
-            solida e riconoscibile nel settore dei semilavorati da forno.
+            Il Made in Italy secondo depagel group.
           </p>
         </div>
       </section>
