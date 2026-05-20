@@ -28,7 +28,7 @@ export default function ProductsPreview() {
     <section id="prodotti" className="bg-transparent py-20 sm:py-24 scroll-mt-24">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="max-w-3xl">
-          <span className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex">
+          <span className="inline-flex w-25 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
             Prodotti
           </span>
 
@@ -74,7 +74,7 @@ export default function ProductsPreview() {
                 <div className="mt-6">
                   <Link
                     href="/prodotti"
-                    className="inline-flex items-center gap-2 text-sm font-regular text-[#046DB6] transition hover:text-[#035A95]"
+                    className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
                   >
                     Scopri di più
                     <span>→</span>

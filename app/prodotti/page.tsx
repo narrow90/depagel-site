@@ -94,7 +94,7 @@ export default function ProdottiPage() {
       <section className="mx-auto max-w-7xl px-6 py-12 md:px-10 lg:py-16">
         <div className="grid gap-10 lg:grid-cols-[280px_1fr]">
           <aside className="rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm">
-            <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-[#51606F]">
+            <h2 className="text-sm font-regular uppercase tracking-[0.16em] text-[#51606F]">
               Cerca tra i prodotti
             </h2>
 
@@ -111,7 +111,7 @@ export default function ProdottiPage() {
 
             <div className="my-8 h-px bg-[#D9EAF5]" />
 
-            <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-[#51606F]">
+            <h3 className="text-sm font-regular uppercase tracking-[0.16em] text-[#51606F]">
               Categorie prodotto
             </h3>
 
@@ -122,7 +122,7 @@ export default function ProdottiPage() {
                 setSearch("");
                 setSort("default");
               }}
-              className="mt-4 text-sm font-medium text-[#046DB6] hover:underline"
+              className="mt-4 text-sm font-regular text-[#046DB6] hover:underline"
             >
               Mostra tutti
             </button>
@@ -133,7 +133,7 @@ export default function ProdottiPage() {
                   <button
                     type="button"
                     onClick={() => setSelectedCategory(category.name)}
-                    className={`flex w-full items-center justify-between font-semibold transition ${
+                    className={`flex w-full items-center justify-between font-regular transition ${
                       selectedCategory === category.name
                         ? "text-[#046DB6]"
                         : "text-[#0F1720] hover:text-[#046DB6]"

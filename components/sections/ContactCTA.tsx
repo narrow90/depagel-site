@@ -9,7 +9,7 @@ export default function ContactCTA() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,#D1F0FC_0%,#D1F0FC_100%)] px-8 py-12 shadow-2xl sm:px-10 sm:py-14 lg:px-14 lg:py-16">
           <div className="max-w-3xl">
-            <span className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex">
+            <span className="inline-flex w-25 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
               Contatti
             </span>
 
@@ -23,27 +23,27 @@ export default function ContactCTA() {
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-              <Link
+              <center><Link
                 href="mailto:info@depagelgroup.com"
-                className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
+                className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
               >
                 E-Mail
-              </Link>
+              </Link></center>
 
-              <Link
+              <center><Link
                 href="https://wa.me/393758596044"
                 target="_blank"
-                className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
+                className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
               >
                 Whatsapp
-              </Link>
+              </Link></center>
 
-              <Link
+              <center><Link
                 href=""
-                className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
+                className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
               >
                 Lavora con noi
-              </Link>
+              </Link></center>
             </div>
 
           </div>

@@ -2,46 +2,46 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "Mario Rossi",
-    role: "CEO & Founder",
+    name: "Giuseppe Salerno",
+    role: "Owner | CEO | Co-Founder",
     image: "/images/team/team-1.jpg",
     partner: true,
   },
   {
-    name: "Luca Bianchi",
-    role: "Responsabile Produzione",
+    name: "Bruno De Rosa",
+    role: "Owner | Founder",
     image: "/images/team/team-2.jpg",
     partner: true,
   },
   {
-    name: "Giuseppe Verdi",
-    role: "Direzione Commerciale",
+    name: "Pietro Tulimieri",
+    role: "Owner | Co-Founder | Sales Manager",
     image: "/images/team/team-3.jpg",
     partner: true,
   },
   {
-    name: "Antonio Esposito",
-    role: "Controllo Qualità",
+    name: "Michele Di Gaetano",
+    role: "Senior Production Manager",
     image: "/images/team/team-4.jpg",
   },
   {
-    name: "Marco Romano",
-    role: "Responsabile Logistica",
+    name: "Antonio Di Gaetano",
+    role: "Junior Production Manager",
     image: "/images/team/team-5.jpg",
   },
   {
-    name: "Davide Greco",
-    role: "Amministrazione",
+    name: "Alfonso Corrado",
+    role: "Production Operator",
     image: "/images/team/team-6.jpg",
   },
   {
-    name: "Francesco Ferrara",
-    role: "Responsabile Clienti",
+    name: "Pietro Bruno",
+    role: "Production Operator",
     image: "/images/team/team-7.jpg",
   },
   {
-    name: "Francesco Ferrara",
-    role: "Responsabile Clienti",
+    name: "Nunzio Chiaviello",
+    role: "Warehouse Manager",
     image: "/images/team/team-7.jpg",
   },
 ];
@@ -53,18 +53,16 @@ export default function TeamSection() {
         
         {/* HEADER */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-[#046DB6] px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white shadow-lg shadow-[#046DB6]/20">
+          <span className="inline-flex w-25 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
             Il nostro team
           </span>
 
-          <h2 className="mt-6 text-4xl font-semibold tracking-tight text-[#51606F] sm:text-5xl">
-            Persone, esperienza e qualità
+          <h2 className="mt-6 text-4xl font-regular tracking-tight text-[#51606F] sm:text-5xl">
+            
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-[#7e8994]">
-            Un team composto da professionisti specializzati nel settore
-            dolciario, uniti dalla passione per la qualità e
-            dall’attenzione verso il cliente.
+            
           </p>
         </div>
 
@@ -88,13 +86,9 @@ export default function TeamSection() {
         </div>
 
         <div className="mt-6 text-center">
-          {member.partner && (
-            <span className="inline-flex rounded-full bg-[#046DB6]/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#046DB6]">
-              Socio
-            </span>
-          )}
+          
 
-          <h3 className="mt-4 text-xl font-semibold text-[#51606F]">
+          <h3 className="mt-4 text-xl font-regular text-[#51606F]">
             {member.name}
           </h3>
 
@@ -123,13 +117,9 @@ export default function TeamSection() {
         </div>
 
         <div className="mt-6 text-center">
-          {member.partner && (
-            <span className="inline-flex rounded-full bg-[#046DB6]/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#046DB6]">
-              Socio
-            </span>
-          )}
+          
 
-          <h3 className="mt-4 text-lg font-semibold text-[#51606F]">
+          <h3 className="mt-4 text-sm font-regular text-[#51606F]">
             {member.name}
           </h3>
 

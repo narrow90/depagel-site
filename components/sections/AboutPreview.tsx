@@ -23,7 +23,7 @@ export default function AboutPreview() {
     <section id="azienda" className="bg-transparent py-20 sm:py-24 scroll-mt-24">
       <div className="mx-auto grid max-w-7xl gap-14 px-6 md:px-10 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <span className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex">
+          <span className="inline-flex w-25 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
             L’azienda
           </span>
 
@@ -45,7 +45,7 @@ export default function AboutPreview() {
           <div className="mt-8">
             <Link
               href="/azienda"
-              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+              className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-autoo"
             >
               Scopri l’azienda
             </Link>

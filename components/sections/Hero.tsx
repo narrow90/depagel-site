@@ -49,19 +49,19 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Link
+            <center><Link
               href="/prodotti"
-              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+              className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
             >
               Scopri i prodotti
-            </Link>
+            </Link></center>
 
-            <Link
+            <center><Link
               href="#contatti"
-              className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
+              className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
             >
               Contattaci
-            </Link>
+            </Link></center>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
