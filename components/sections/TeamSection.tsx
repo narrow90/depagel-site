@@ -39,6 +39,11 @@ const team = [
     role: "Responsabile Clienti",
     image: "/images/team/team-7.jpg",
   },
+  {
+    name: "Francesco Ferrara",
+    role: "Responsabile Clienti",
+    image: "/images/team/team-7.jpg",
+  },
 ];
 
 export default function TeamSection() {
@@ -103,7 +108,7 @@ export default function TeamSection() {
 
   {/* BOTTOM ROW */}
   <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
-    {team.slice(3, 7).map((member) => (
+    {team.slice(3, 8).map((member) => (
       <article
         key={member.name}
         className="group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
