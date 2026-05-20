@@ -64,41 +64,78 @@ export default function TeamSection() {
         </div>
 
         {/* GRID */}
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {team.map((member) => (
-            <article
-              key={member.name}
-              className="group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              {/* IMAGE */}
-              <div className="relative mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                />
-              </div>
+        <div className="mt-16 space-y-8">
 
-              {/* CONTENT */}
-              <div className="mt-6 text-center">
-                {member.partner && (
-                  <span className="inline-flex rounded-full bg-[#046DB6]/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#046DB6]">
-                    Socio
-                  </span>
-                )}
-
-                <h3 className="mt-4 text-xl font-semibold text-[#51606F]">
-                  {member.name}
-                </h3>
-
-                <p className="mt-2 text-sm text-[#7e8994]">
-                  {member.role}
-                </p>
-              </div>
-            </article>
-          ))}
+  {/* TOP ROW */}
+  <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
+    {team.slice(0, 3).map((member) => (
+      <article
+        key={member.name}
+        className="group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div className="relative mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
+          <Image
+            src={member.image}
+            alt={member.name}
+            fill
+            className="object-cover transition duration-500 group-hover:scale-105"
+          />
         </div>
+
+        <div className="mt-6 text-center">
+          {member.partner && (
+            <span className="inline-flex rounded-full bg-[#046DB6]/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#046DB6]">
+              Socio
+            </span>
+          )}
+
+          <h3 className="mt-4 text-xl font-semibold text-[#51606F]">
+            {member.name}
+          </h3>
+
+          <p className="mt-2 text-sm text-[#7e8994]">
+            {member.role}
+          </p>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  {/* BOTTOM ROW */}
+  <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    {team.slice(3, 7).map((member) => (
+      <article
+        key={member.name}
+        className="group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div className="relative mx-auto h-44 w-44 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
+          <Image
+            src={member.image}
+            alt={member.name}
+            fill
+            className="object-cover transition duration-500 group-hover:scale-105"
+          />
+        </div>
+
+        <div className="mt-6 text-center">
+          {member.partner && (
+            <span className="inline-flex rounded-full bg-[#046DB6]/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#046DB6]">
+              Socio
+            </span>
+          )}
+
+          <h3 className="mt-4 text-lg font-semibold text-[#51606F]">
+            {member.name}
+          </h3>
+
+          <p className="mt-2 text-sm text-[#7e8994]">
+            {member.role}
+          </p>
+        </div>
+      </article>
+    ))}
+  </div>
+  </div>
       </div>
     </section>
   );
