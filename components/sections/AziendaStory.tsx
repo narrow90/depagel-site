@@ -17,20 +17,22 @@ const sections = [
     reverse: true,
   },
   {
-  title: "I nostri numeri e la tecnologia:",
-  description: `
-    <p>
-      L’evoluzione del mercato ha portato Depagel Group a investire in ricerca, innovazione e sviluppo di nuove referenze, con l’obiettivo di offrire soluzioni moderne e performanti per il settore professionale.
+  title: "I nostri numeri e la tecnologia",
+  description: `<p>
+      L’evoluzione del mercato ha portato Depagel Group a investire costantemente in ricerca, innovazione e sviluppo di nuove referenze, con l’obiettivo di offrire soluzioni moderne, affidabili e performanti dedicate al settore professionale.
     </p>
 
-    <ul>
-      <li><strong>Sede:</strong> 1.170 mq totali.</li>
-      <li><strong>Produzione:</strong> Reparto all'avanguardia di circa 550 mq.</li>
-      <li><strong>Lievitazione:</strong> Camera da 170 m³ a temperatura e umidità controllata.</li>
-      <li><strong>Conservazione:</strong> 350 m³ di celle a -18°.</li>
-      <li><strong>Abbattimento:</strong> Cella abbattitore da 78 m³ (40 kW), in grado di surgelare il prodotto fresco in meno di un'ora.</li>
-    </ul>
-  `,
+    <ul class="mt-6 space-y-3">
+      <li><strong>Sede produttiva:</strong> 1.170 mq complessivi.</li>
+
+      <li><strong>Reparto produzione:</strong> area tecnologicamente avanzata di circa 550 mq.</li>
+
+      <li><strong>Camera di lievitazione:</strong> 170 m³ a temperatura e umidità controllata.</li>
+
+      <li><strong>Celle di conservazione:</strong> 350 m³ a -18°C.</li>
+
+      <li><strong>Sistema di abbattimento:</strong> cella abbattitore da 78 m³ (40 kW), capace di surgelare il prodotto fresco in meno di un’ora.</li>
+    </ul>`,
   image: "/images/storia-3.jpg",
   reverse: false,
 },
@@ -96,9 +98,10 @@ export default function AziendaPage() {
                   {section.title}
                 </h2>
 
-                <p className="mt-6 text-lg leading-8 text-[#7e8994]">
-                  {section.description}
-                </p>
+                <div
+  className="text-base leading-8 text-[#7e8994] [&_ul]:mt-6 [&_ul]:space-y-3 [&_li]:pl-1 [&_strong]:text-[#51606F]"
+  dangerouslySetInnerHTML={{ __html: {section.description} }}
+/>
               </div>
             </div>
           ))}
