@@ -69,14 +69,14 @@ export default function TeamSection() {
         </div>
 
         {/* GRID */}
-        <div className="mt-16 space-y-8">
+        <div className="mt-16 space-y-10">
 
   {/* TOP ROW */}
-  <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
+  <div className="flex flex-wrap justify-center gap-8">
     {team.slice(0, 3).map((member) => (
       <article
         key={member.name}
-        className="group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+        className="w-full max-w-[320px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
       >
         <div className="relative mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
           <Image
@@ -107,13 +107,13 @@ export default function TeamSection() {
   </div>
 
   {/* BOTTOM ROW */}
-  <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+  <div className="flex flex-wrap justify-center gap-8">
     {team.slice(3, 8).map((member) => (
       <article
         key={member.name}
-        className="group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+        className="w-full max-w-[240px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
       >
-        <div className="relative mx-auto h-44 w-44 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
+        <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
           <Image
             src={member.image}
             alt={member.name}
@@ -140,7 +140,8 @@ export default function TeamSection() {
       </article>
     ))}
   </div>
-  </div>
+
+</div>
       </div>
     </section>
   );
