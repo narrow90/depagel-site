@@ -99,8 +99,8 @@ export default function AziendaPage() {
                 </h2>
 
                 <div
-  className="text-base leading-8 text-[#7e8994] [&_ul]:mt-6 [&_ul]:space-y-3 [&_li]:pl-1 [&_strong]:text-[#51606F]"
-  dangerouslySetInnerHTML={{ __html: {section.description} }}
+  className="mt-6 text-lg leading-8 text-[#7e8994] [&_ul]:mt-6 [&_ul]:space-y-3 [&_li]:pl-1 [&_strong]:text-[#51606F]"
+  dangerouslySetInnerHTML={{ __html: section.description }}
 />
               </div>
             </div>
