@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TeamSection from "@/components/sections/TeamSection";
 
 const sections = [
   {
@@ -102,6 +103,7 @@ export default function AziendaPage() {
             </div>
           ))}
         </div>
+        <TeamSection />
       </section>
     </main>
   );
