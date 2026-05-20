@@ -111,9 +111,9 @@ export default function TeamSection() {
     {team.slice(3, 8).map((member) => (
       <article
         key={member.name}
-        className="w-full max-w-[240px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+        className="w-[180px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
       >
-        <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
+        <div className="relative mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
           <Image
             src={member.image}
             alt={member.name}
