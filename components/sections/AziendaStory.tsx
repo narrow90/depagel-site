@@ -46,8 +46,8 @@ export default function AziendaPage() {
   return (
     <main className="bg-transparent">
       {/* HERO */}
-      <section id="scopriazienda"  className="relative overflow-hidden py-24 sm:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(210,236,249,0.85),_transparent_38%)]" />
+      <section id="azienda"  className="relative overflow-hidden py-24 sm:py-32">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(210,236,249,0.85),_transparent_0%)]" />
 
         <div className="relative mx-auto max-w-7xl px-6 text-center md:px-10">
           <span className="inline-flex w-25 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
@@ -103,7 +103,6 @@ export default function AziendaPage() {
             </div>
           ))}
         </div>
-        <TeamSection />
       </section>
     </main>
   );

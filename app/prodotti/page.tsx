@@ -150,7 +150,7 @@ export default function ProdottiPage() {
               <span className="text-xl text-[#046DB6]">⌕</span>
             </div>
 
-            <div className="my-8 h-px bg-[#D9EAF5]" />
+            <div className="my-8 h-px bg-[#51606F]" />
 
             <h3 className="text-sm font-regular uppercase tracking-[0.16em] text-[#51606F]">
               Categorie prodotto
@@ -176,8 +176,8 @@ export default function ProdottiPage() {
                     onClick={() => setSelectedCategory(category.name)}
                     className={`flex w-full items-center justify-between font-regular transition ${
                       selectedCategory === category.name
-                        ? "text-[#046DB6]"
-                        : "text-[#0F1720] hover:text-[#046DB6]"
+                        ? "text-[#51606F]"
+                        : "text-[#51606F] hover:text-[#046DB6]"
                     }`}
                   >
                     <span>{category.name}</span>
@@ -187,7 +187,7 @@ export default function ProdottiPage() {
                   </button>
 
                   {"children" in category && category.children && (
-                    <div className="mt-3 space-y-3 pl-4 text-[#7e8994]">
+                    <div className="mt-3 space-y-3 pl-4 text-[#046DB6]">
                       {category.children.map((child) => (
                         <button
                           key={child.name}
@@ -195,8 +195,8 @@ export default function ProdottiPage() {
                           onClick={() => setSelectedCategory(child.name)}
                           className={`flex w-full items-center justify-between transition ${
                             selectedCategory === child.name
-                              ? "text-[#046DB6]"
-                              : "text-[#51606F] hover:text-[#046DB6]"
+                              ? "text-[#7e8994]"
+                              : "text-[#7e8994] hover:text-[#046DB6]"
                           }`}
                         >
                           <span>{child.name}</span>
@@ -215,7 +215,7 @@ export default function ProdottiPage() {
           <div>
             <div className="mb-8 flex flex-col gap-4 rounded-[1.5rem] border border-[#D9EAF5] bg-white/80 p-5 shadow-sm md:flex-row md:items-center md:justify-between">
               <div className="text-sm text-[#51606F]">
-                <Link href="/" className="hover:text-[#046DB6]">
+                <Link href="/" className="hover:text-[#51606F]">
                   Home
                 </Link>
                 <span className="mx-2">/</span>
