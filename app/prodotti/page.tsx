@@ -7,16 +7,23 @@ import { useMemo, useState } from "react";
 const categories = [
   {
     name: "Dolci",
-    count: 66,
     children: [
-      { name: "Da Lievitare", count: 32 },
-      { name: "Pronto Forno", count: 21 },
-      { name: "Tradizionali", count: 10 },
-      { name: "Da Friggere", count: 3 },
+      { name: "Da Lievitare" },
+      { name: "Pronto Forno" },
+      { name: "Tradizionali" },
+      { name: "Da Friggere" },
     ],
   },
-  { name: "Salati", count: 8 },
-  { name: "Basi", count: 4 },
+  {
+    name: "Salati",
+    children: [
+      { name: "Da Lievitare" },
+      { name: "Pronto Forno" },
+      { name: "Tradizionali" },
+      { name: "Da Friggere" },
+    ],
+  },
+  { name: "Basi" },
 ];
 
 const products = [
@@ -62,6 +69,40 @@ export default function ProdottiPage() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("Tutti");
   const [sort, setSort] = useState("default");
+
+  const categoriesWithCount = useMemo(() => {
+  return categories.map((category) => {
+    // conta prodotti categoria principale
+    const categoryCount = products.filter((product) =>
+      product.category.includes(category.name)
+    ).length;
+
+    // sottocategorie
+    if (category.children) {
+      const childrenWithCount = category.children.map((child) => {
+        const childCount = products.filter((product) =>
+          product.category.includes(child.name)
+        ).length;
+
+        return {
+          ...child,
+          count: childCount,
+        };
+      });
+
+      return {
+        ...category,
+        count: categoryCount,
+        children: childrenWithCount,
+      };
+    }
+
+    return {
+      ...category,
+      count: categoryCount,
+    };
+  });
+}, []);
 
   const filteredProducts = useMemo(() => {
     let result = products.filter((product) => {
@@ -128,7 +169,7 @@ export default function ProdottiPage() {
             </button>
 
             <div className="mt-6 space-y-4 text-sm">
-              {categories.map((category) => (
+              {categoriesWithCount.map((category) => (
                 <div key={category.name}>
                   <button
                     type="button"
