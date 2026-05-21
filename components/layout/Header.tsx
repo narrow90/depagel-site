@@ -22,13 +22,28 @@ export default function Header() {
   type="button"
   aria-label="Apri menu"
   onClick={() => setIsOpen((prev) => !prev)}
-  className="z-20 flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+  className="relative z-20 flex h-10 w-10 items-center justify-center lg:hidden"
 >
-  <span className="h-[2px] w-6 rounded-full bg-white transition-all" />
+  {/* LINEA 1 */}
+  <span
+    className={`absolute h-[2px] w-6 rounded-full bg-white transition-all duration-300 ${
+      isOpen ? "rotate-45" : "-translate-y-2"
+    }`}
+  />
 
-  <span className="h-[2px] w-6 rounded-full bg-white transition-all" />
+  {/* LINEA 2 */}
+  <span
+    className={`absolute h-[2px] w-6 rounded-full bg-white transition-all duration-300 ${
+      isOpen ? "opacity-0" : "opacity-100"
+    }`}
+  />
 
-  <span className="h-[2px] w-6 rounded-full bg-white transition-all" />
+  {/* LINEA 3 */}
+  <span
+    className={`absolute h-[2px] w-6 rounded-full bg-white transition-all duration-300 ${
+      isOpen ? "-rotate-45" : "translate-y-2"
+    }`}
+  />
 </button>
 
         {/* LEFT MENU DESKTOP */}
