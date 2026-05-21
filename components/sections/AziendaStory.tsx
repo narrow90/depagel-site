@@ -36,7 +36,7 @@ const sections = [
   {
     title: "Qualità e Logistica:",
     description:
-      "Siamo certificati HACCP per garantire i massimi standard di sicurezza alimentare ai nostri clienti. Grazie alla nostra rete di distribuzione capillare, garantiamo consegne puntuali e nel rispetto della cold chain in tutta la campania, nel sud italia, in sicilia, ma servendoci delle consolidate partnership con piattaforme di spedizione, possiamo arrivare ovunque voi abbiate richiesta. ",
+      "Siamo certificati HACCP per garantire i massimi standard di sicurezza alimentare ai nostri clienti. Grazie alla nostra rete di distribuzione capillare, garantiamo consegne puntuali e nel rispetto della cold chain in tutta la campania, nel sud italia, in sicilia ma servendoci delle consolidate partnership con piattaforme di spedizione, possiamo arrivare ovunque voi abbiate richiesta. ",
     image: "/images/storia-4.jpg",
     reverse: true,
   },

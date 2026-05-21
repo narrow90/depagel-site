@@ -68,14 +68,17 @@ export default function Hero() {
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {["Qualità", "Affidabilità", "Gamma"].map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-[#D9EAF5] bg-white p-4 shadow-sm"
-              >
-                <p className="text-sm font-regular text-[#046DB6]">{item}</p>
-                <p className="mt-1 text-sm text-[#7e8994]">
-                  Soluzioni dolciarie per clienti professionali
+  {["Qualità", "Affidabilità", "Gamma"].map((item) => (
+    <div
+      key={item}
+      className="flex flex-col items-center justify-center rounded-2xl border border-[#D9EAF5] bg-white p-4 text-center shadow-sm"
+    >
+      <p className="text-sm font-regular text-[#046DB6]">
+        {item}
+      </p>
+
+      <p className="mt-1 text-sm text-[#7e8994]">
+        Soluzioni dolciarie per clienti professionali
                 </p>
               </div>
             ))}
@@ -90,7 +93,7 @@ export default function Hero() {
   width={900}
   height={1100}
   priority
-  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[520px] lg:h-[680px]"
+  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[260px] lg:h-[420px]"
 />
 
     {/* Sfumatura solo in basso */}
@@ -99,7 +102,7 @@ export default function Hero() {
     {/* Testo sopra la sfumatura */}
     <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
       <h2 className="text-2xl font-regular text-white drop-shadow-md sm:text-3xl">
-        Qualità pensata per te
+      
       </h2>
     </div>
   </div>
