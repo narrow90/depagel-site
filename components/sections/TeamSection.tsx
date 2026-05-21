@@ -5,18 +5,21 @@ const team = [
     name: "Giuseppe Salerno",
     role: "Owner | CEO | Co-Founder",
     image: "/images/team/GIUSEPPE-SALERNO.webp",
+    order: "order-2 md:order-1",
     partner: true,
   },
   {
     name: "Bruno De Rosa",
     role: "Owner | Founder",
     image: "/images/team/BRUNO-DE-ROSA.webp",
+    order: "order-1 md:order-2",
     partner: true,
   },
   {
     name: "Pietro Tulimieri",
     role: "Owner | Co-Founder | Sales Manager",
     image: "/images/team/team-3.jpg",
+    order: "order-3 md:order-3",
     partner: true,
   },
   {
@@ -53,7 +56,7 @@ export default function TeamSection() {
         
         {/* HEADER */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex w-25 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
+          <span className="inline-flex w-40 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
             Il nostro team
           </span>
 
@@ -74,7 +77,7 @@ export default function TeamSection() {
     {team.slice(0, 3).map((member) => (
       <article
         key={member.name}
-        className="w-full max-w-[320px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+        className={`${member.order ?? ""} w-full max-w-[320px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl`}
       >
         <div className="relative mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
           <Image
