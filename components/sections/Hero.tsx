@@ -35,11 +35,14 @@ export default function Hero() {
         <div className="max-w-xl">
           
 
-          <h1 className="text-4xl font-regular leading-tight tracking-tight text-[#51606F] sm:text-5xl lg:text-6xl">
-            Il made in italy secondo
-            <span className="block text-[#046DB6]">
-              Depagel Group
-            </span>
+          <h1 className="text-4xl font-regular leading-tight tracking-tight text-[#51606F] sm:text-4xl lg:text-4xl">
+          <span className="whitespace-nowrap">
+          Il made in italy secondo
+          </span>
+
+          <span className="block text-[#046DB6]">
+          Depagel Group
+          </span>
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-[#7e8994] sm:text-xl">
