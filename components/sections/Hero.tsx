@@ -19,7 +19,7 @@ export default function Hero() {
       setCurrentImage((prev) =>
         prev === heroImages.length - 1 ? 0 : prev + 1
       );
-    }, 2000);
+    }, 3500);
 
     return () => clearInterval(interval);
   }, []);
