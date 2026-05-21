@@ -4,13 +4,13 @@ const team = [
   {
     name: "Giuseppe Salerno",
     role: "Owner | CEO | Co-Founder",
-    image: "/images/team/team-1.jpg",
+    image: "/images/team/GIUSEPPE-SALERNO.webp",
     partner: true,
   },
   {
     name: "Bruno De Rosa",
     role: "Owner | Founder",
-    image: "/images/team/team-2.jpg",
+    image: "/images/team/BRUNO-DE-ROSA.webp",
     partner: true,
   },
   {
@@ -22,27 +22,27 @@ const team = [
   {
     name: "Michele Di Gaetano",
     role: "Senior Production Manager",
-    image: "/images/team/team-4.jpg",
+    image: "/images/team/MICHELE-DI-GAETANO.webp",
   },
   {
     name: "Antonio Di Gaetano",
     role: "Junior Production Manager",
-    image: "/images/team/team-5.jpg",
+    image: "/images/team/ANTONIO-DI-GAETANO.webp",
   },
   {
     name: "Alfonso Corrado",
     role: "Production Operator",
-    image: "/images/team/team-6.jpg",
+    image: "/images/team/ALFONSO-CORRADO.webp",
   },
   {
     name: "Pietro Bruno",
     role: "Production Operator",
-    image: "/images/team/team-7.jpg",
+    image: "/images/team/PIETRO-BRUNO.webp",
   },
   {
     name: "Nunzio Chiaviello",
     role: "Warehouse Manager",
-    image: "/images/team/team-7.jpg",
+    image: "/images/team/NUNZIO-CHIAVIELLO.webp",
   },
 ];
 

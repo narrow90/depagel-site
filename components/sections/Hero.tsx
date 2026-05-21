@@ -31,7 +31,7 @@ export default function Hero() {
     <section id="home" className="relative overflow-hidden bg-transparent scroll-mt-24">
       <div className="absolute inset-0 " />
 
-      <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-16 md:px-10 lg:grid-cols-2 lg:py-24">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 py-10 md:px-10 lg:grid-cols-2 lg:py-20">
         <div className="max-w-xl">
           
 
@@ -46,9 +46,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-[#7e8994] sm:text-xl">
-            Produciamo semilavorati da forno pensati per bar, hotel e distribuzione,
-            con attenzione alla qualità, alla continuità e al
-            valore del prodotto.
+            Da anni specializzati nella produzione di semilavorati freschissimi surgelati pensati per
+            soddisfare le esigenze del settore HO.RE.CA. e della grande distribuzione.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -67,22 +66,6 @@ export default function Hero() {
             </Link></center>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-  {["Qualità", "Affidabilità", "Gamma"].map((item) => (
-    <div
-      key={item}
-      className="flex flex-col items-center justify-center rounded-2xl border border-[#D9EAF5] bg-white p-4 text-center shadow-sm"
-    >
-      <p className="text-sm font-regular text-[#046DB6]">
-        {item}
-      </p>
-
-      <p className="mt-1 text-sm text-[#7e8994]">
-        Soluzioni dolciarie per clienti professionali
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="relative">
@@ -93,7 +76,7 @@ export default function Hero() {
   width={900}
   height={1100}
   priority
-  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[260px] lg:h-[420px]"
+  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[200px] lg:h-[360px]"
 />
 
     {/* Sfumatura solo in basso */}
@@ -108,6 +91,36 @@ export default function Hero() {
   </div>
 </div>
       </div>
+      {/* FEATURES */}
+<div className="mt-6 flex flex-wrap justify-center gap-6">
+  {[
+  {
+    title: "Qualità",
+    text: "Materie di prima qualità eccelsa... Solo il top!",
+  },
+  {
+    title: "Affidabilità",
+    text: "Consegniamo sempre e sempre puntuali!",
+  },
+  {
+    title: "Gamma",
+    text: "Più di 130 prodotti sempre surgelati freschissimi!",
+  },
+].map((item) => (
+  <div
+    key={item.title}
+    className="w-full max-w-[220px] rounded-[1.5rem] border border-[#D9EAF5] bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm"
+  >
+    <p className="text-base font-semibold text-[#046DB6]">
+      {item.title}
+    </p>
+
+    <p className="mt-2 text-sm leading-6 text-[#7e8994]">
+      {item.text}
+    </p>
+  </div>
+))}
+</div>
     </section>
   );
 }
