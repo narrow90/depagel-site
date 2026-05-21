@@ -51,91 +51,91 @@ const team = [
 
 export default function TeamSection() {
   return (
-    <section id="team"className="bg-transparent py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 md:px-10">
-        
-        {/* HEADER */}
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex w-40 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
-            Il nostro team
-          </span>
 
-          <h2 className="mt-6 text-4xl font-regular tracking-tight text-[#51606F] sm:text-5xl">
-            
-          </h2>
+    <section id="team"  className="mt-24">
+  <div className="mb-20 text-center">
+    <span className="inline-flex w-40 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
+      Il nostro team
+    </span>
 
-          <p className="mt-6 text-lg leading-8 text-[#7e8994]">
-            
-          </p>
-        </div>
+    <h2 className="mt-6 text-4xl font-semiregular text-[#51606F]">
+      
+    </h2>
 
-        {/* GRID */}
-        <div className="mt-16 space-y-10">
+    <p className="mx-auto mt-10 max-w-2xl text-lg text-[#7e8994]">
+      
+    </p>
+  </div>
 
+    
   {/* TOP ROW */}
   <div className="flex flex-wrap justify-center gap-8">
     {team.slice(0, 3).map((member) => (
       <article
         key={member.name}
-        className={`${member.order ?? ""} w-full max-w-[320px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl`}
+        className={`${member.order ?? ""} w-full max-w-[320px] group overflow-hidden rounded-[32px] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl`}
       >
-        <div className="relative mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
+        <div className="relative h-[420px] w-[320px] overflow-hidden">
           <Image
             src={member.image}
             alt={member.name}
-            fill
-            className="object-cover transition duration-500 group-hover:scale-105"
+            width={1536}
+            height={1024}
+            quality={100}
+            className="h-full w-full object-cover"
           />
-        </div>
 
-        <div className="mt-6 text-center">
-          
+          {/* Gradient Overlay */}
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
 
-          <h3 className="mt-4 text-xl font-regular text-[#51606F]">
-            {member.name}
-          </h3>
+          {/* Text */}
+          <div className="absolute bottom-0 left-0 flex w-full flex-col items-center justify-center p-3 text-center text-[#D1F0FC]">
+            <h3 className="text-2xl font-regular">
+              {member.name}
+            </h3>
 
-          <p className="mt-2 text-sm text-[#7e8994]">
-            {member.role}
-          </p>
+            <p className="mt-0 text-sm text-white/80">
+              {member.role}
+            </p>
+          </div>
         </div>
       </article>
     ))}
   </div>
-
   {/* BOTTOM ROW */}
-  <div className="flex flex-wrap justify-center gap-8">
+  <div className="mt-16 flex flex-wrap justify-center gap-6">
     {team.slice(3, 8).map((member) => (
       <article
         key={member.name}
-        className="w-[180px] group overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+        className="group relative overflow-hidden rounded-[28px] bottom-10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
       >
-        <div className="relative mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-[#D1F0FC]">
+        <div className="relative h-[300px] w-[220px] overflow-hidden">
           <Image
             src={member.image}
             alt={member.name}
-            fill
-            className="object-cover transition duration-500 group-hover:scale-105"
+            width={1536}
+            height={1024}
+            quality={100}
+            className="h-full w-full object-cover"
           />
-        </div>
 
-        <div className="mt-6 text-center">
-          
+          {/* Gradient Overlay */}
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
 
-          <h3 className="mt-4 text-sm font-regular text-[#51606F]">
-            {member.name}
-          </h3>
+          {/* Text */}
+          <div className="absolute bottom-0 left-0 flex w-full flex-col items-center justify-center p-3 text-center text-[#D1F0FC]">
+            <h3 className="text-lg font-regular">
+              {member.name}
+            </h3>
 
-          <p className="mt-2 text-sm text-[#7e8994]">
-            {member.role}
-          </p>
+            <p className="mt-0 text-xs text-white/80">
+              {member.role}
+            </p>
+          </div>
         </div>
       </article>
     ))}
   </div>
-
-</div>
-      </div>
-    </section>
+  </section>
   );
 }

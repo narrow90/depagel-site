@@ -111,7 +111,7 @@ export default function Hero() {
     key={item.title}
     className="w-full max-w-[220px] rounded-[1.5rem] border border-[#D9EAF5] bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm"
   >
-    <p className="text-base font-semibold text-[#046DB6]">
+    <p className="text-base font-semiregular text-[#046DB6]">
       {item.title}
     </p>
 
