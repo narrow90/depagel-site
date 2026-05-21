@@ -12,7 +12,6 @@ const heroImages = [
 ];
 
 export default function Hero() {
-
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -20,7 +19,7 @@ export default function Hero() {
       setCurrentImage((prev) =>
         prev === heroImages.length - 1 ? 0 : prev + 1
       );
-    }, 3500);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -71,16 +70,16 @@ export default function Hero() {
         <div className="relative">
   <div className="relative overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white shadow-[0_20px_60px_rgba(4,109,182,0.12)]">
     <Image
+  key={heroImages[currentImage]}
   src={heroImages[currentImage]}
   alt="Lavorazione prodotti dolciari"
   width={900}
   height={1100}
-  priority
   className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[200px] lg:h-[360px]"
 />
 
     {/* Sfumatura solo in basso */}
-    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#046DB6]/60 to-transparent" />
+    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#046DB6]/60 to-transparent" />
 
     {/* Testo sopra la sfumatura */}
     <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
