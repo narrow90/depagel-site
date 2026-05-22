@@ -9,7 +9,7 @@ export default function ContactCTA() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,#D1F0FC_0%,#D1F0FC_100%)] px-8 py-12 shadow-2xl sm:px-10 sm:py-14 lg:px-14 lg:py-16">
           <div className="max-w-3xl">
-            <span className="inline-flex w-25 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
+            <span className="inline-flex w-40 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
               Contatti
             </span>
 
