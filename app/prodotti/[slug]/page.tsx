@@ -126,8 +126,8 @@ export default async function ProductDetailPage({
             </p>
 
             {/* TABLE */}
-            <div className="mt-10 overflow-hidden rounded-[1.5rem] border border-[#D9EAF5] bg-white">
-              <table className="w-full text-left text-sm text-[#51606F]">
+            <div className="mt-10 overflow-x-auto rounded-[1.5rem] border border-[#D9EAF5] bg-white">
+            <table className="min-w-[620px] w-full text-left text-sm text-[#51606F]">
                 <thead className="bg-[#D1F0FC]/60 text-[#51606F]">
                   <tr>
                     <th className="px-5 py-4 font-regular">

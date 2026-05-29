@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="max-w-xl">
           
 
-          <h1 className="text-4xl font-regular leading-tight tracking-tight text-[#51606F] sm:text-4xl lg:text-4xl">
+          <h1 className="text-4xl font-regular leading-tight text-center tracking-tight text-[#51606F] sm:text-4xl lg:text-4xl">
           <span className="whitespace-nowrap">
           Il made in italy secondo
           </span>
@@ -44,12 +44,12 @@ export default function Hero() {
           </span>
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-[#7e8994] sm:text-xl">
+          <p className="mt-6 text-lg leading-8 text-[#7e8994] text-center sm:text-xl">
             Da anni specializzati nella produzione di semilavorati freschissimi surgelati pensati per
             soddisfare le esigenze del settore HO.RE.CA. e della grande distribuzione.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-4 justify-center sm:flex-row">
             <center><Link
               href="/prodotti"
               className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
@@ -75,7 +75,7 @@ export default function Hero() {
   alt="Lavorazione prodotti dolciari"
   width={900}
   height={1100}
-  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[200px] lg:h-[360px]"
+  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[200px] lg:h-[300px] "
 />
 
     {/* Sfumatura solo in basso */}
@@ -91,7 +91,7 @@ export default function Hero() {
 </div>
       </div>
       {/* FEATURES */}
-<div className="mt-6 flex flex-wrap justify-center gap-6">
+<div className="mt-6 flex flex-wrap justify-center gap-25">
   {[
   {
     title: "Qualità",
@@ -108,7 +108,7 @@ export default function Hero() {
 ].map((item) => (
   <div
     key={item.title}
-    className="w-full max-w-[220px] rounded-[1.5rem] border border-[#D9EAF5] bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm"
+    className="w-full max-w-[340px] rounded-[1.5rem] border border-[#D9EAF5] bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm"
   >
     <p className="text-base font-semiregular text-[#046DB6]">
       {item.title}
