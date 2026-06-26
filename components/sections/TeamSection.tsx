@@ -18,7 +18,7 @@ const team = [
   {
     name: "Pietro Tulimieri",
     role: "Owner | Co-Founder | Sales Manager",
-    image: "/images/team/team-3.jpg",
+    image: "/images/team/PIETRO-TULIMIERI.webp",
     order: "order-3 md:order-3",
     partner: true,
   },
