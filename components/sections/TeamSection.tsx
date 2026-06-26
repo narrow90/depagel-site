@@ -23,6 +23,13 @@ const team = [
     partner: true,
   },
   {
+    name: "Amedeo Rossomando",
+    role: "Project Manager",
+    image: "/images/team/AMEDEO-ROSSOMANDO.webp",
+    order: "order-4 md:order-4",
+    partner: true,
+  },
+  {
     name: "Michele Di Gaetano",
     role: "Senior Production Manager",
     image: "/images/team/MICHELE-DI-GAETANO.webp",
