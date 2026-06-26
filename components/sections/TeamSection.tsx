@@ -111,7 +111,7 @@ export default function TeamSection() {
   </div>
   {/* BOTTOM ROW */}
   <div className="mt-16 flex flex-wrap justify-center gap-6">
-    {team.slice(4, 8).map((member) => (
+    {team.slice(4, 9).map((member) => (
       <article
         key={member.name}
         className="group relative overflow-hidden rounded-[28px] bottom-10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
