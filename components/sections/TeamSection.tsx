@@ -77,7 +77,7 @@ export default function TeamSection() {
     
   {/* TOP ROW */}
   <div className="flex flex-wrap justify-center gap-8">
-    {team.slice(0, 3).map((member) => (
+    {team.slice(0, 4).map((member) => (
       <article
         key={member.name}
         className={`${member.order ?? ""} w-full max-w-[320px] group overflow-hidden rounded-[32px] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl`}
