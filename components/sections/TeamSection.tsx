@@ -3,7 +3,7 @@ import Image from "next/image";
 const team = [
   {
     name: "Giuseppe Salerno",
-    role: "Owner | CEO | Co-Founder",
+    role: "Owner | CEO",
     image: "/images/team/GIUSEPPE-SALERNO.webp",
     order: "order-2 md:order-1",
     partner: true,
@@ -17,7 +17,7 @@ const team = [
   },
   {
     name: "Pietro Tulimieri",
-    role: "Owner | Co-Founder | Sales Manager",
+    role: "Owner | Sales Manager",
     image: "/images/team/PIETRO-TULIMIERI.webp",
     order: "order-3 md:order-3",
     partner: true,
