@@ -37,18 +37,18 @@ export default function QualitySection() {
               Qualità e produzione
             </p>
 
-            <h2 className="mt-2 text-2xl font-semibold text-white sm:text-3xl">
+            <h2 className="mt-2 text-2xl font-regular text-white sm:text-3xl">
               Cura e continuità in ogni fase
             </h2>
           </div>
         </div>
 
         <div>
-          <span className="inline-block rounded-full border border-[#D9EAF5] bg-[#F6FBFE] px-4 py-1.5 text-sm font-medium text-[#046DB6]">
+          <span className="inline-block rounded-full border border-[#D9EAF5] bg-[#F6FBFE] px-4 py-1.5 text-sm font-regular text-[#046DB6]">
             Qualità
           </span>
 
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-[#0F1720] sm:text-4xl">
+          <h2 className="mt-5 text-3xl font-regular tracking-tight text-[#51606F] sm:text-4xl">
             Una produzione orientata alla qualità del risultato
           </h2>
 
@@ -64,12 +64,12 @@ export default function QualitySection() {
                 className="rounded-[1.5rem] border border-[#D9EAF5] bg-[#F6FBFE] p-5 shadow-sm"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#046DB6] text-sm font-semibold text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#046DB6] text-sm font-regular text-white">
                     0{index + 1}
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-[#0F1720]">
+                    <h3 className="text-lg font-regular text-[#51606F]">
                       {point.title}
                     </h3>
 
@@ -85,7 +85,7 @@ export default function QualitySection() {
           <div className="mt-8">
             <Link
               href="/qualita"
-              className="inline-flex items-center justify-center rounded-2xl bg-[#046DB6] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#035A95]"
+              className="inline-flex items-center justify-center rounded-2xl bg-[#046DB6] px-6 py-3.5 text-sm font-regular text-white shadow-sm transition hover:bg-[#035A95]"
             >
               Approfondisci
             </Link>

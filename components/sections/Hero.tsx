@@ -1,83 +1,125 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const heroImages = [
+  "/images/DSC_0013.JPG",
+  "/images/DSC_0055.JPG",
+  "/images/DSC_0084.JPG",
+  "/images/DSC_0143.JPG",
+];
 
 export default function Hero() {
-  return (
-    
-    <section id="home" className="relative overflow-hidden bg-transparent scroll-mt-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(210,236,249,0.85),_transparent_38%)]" />
+  const [currentImage, setCurrentImage] = useState(0);
 
-      <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-16 md:px-10 lg:grid-cols-2 lg:py-24">
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) =>
+        prev === heroImages.length - 1 ? 0 : prev + 1
+      );
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+ 
+
+    <section id="home" className="relative overflow-hidden bg-transparent scroll-mt-24">
+      <div className="absolute inset-0 " />
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 py-10 md:px-10 lg:grid-cols-2 lg:py-20">
         <div className="max-w-xl">
           
 
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-[#0F1720] sm:text-5xl lg:text-6xl">
-            Il made in italy secondo
-            <span className="block text-[#046DB6]">
-              Depagel Group
-            </span>
+          <h1 className="text-4xl font-regular leading-tight text-center tracking-tight text-[#51606F] sm:text-4xl lg:text-4xl">
+          <span className="whitespace-nowrap">
+          Il made in italy secondo
+          </span>
+
+          <span className="block text-[#046DB6]">
+          Depagel Group
+          </span>
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-[#51606F] sm:text-xl">
-            Produciamo semilavorati da forno pensati per bar, hotel e distribuzione,
-            con attenzione alla qualità, alla continuità e al
-            valore del prodotto.
+          <p className="mt-6 text-lg leading-8 text-[#7e8994] text-center sm:text-xl">
+            Da anni specializzati nella produzione di semilavorati freschissimi surgelati pensati per
+            soddisfare le esigenze del settore HO.RE.CA. e della grande distribuzione.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Link
+          <div className="mt-8 flex flex-col gap-4 justify-center sm:flex-row">
+            <center><Link
               href="/prodotti"
-              className="inline-flex items-center justify-center rounded-2xl bg-[#046DB6] px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95]"
+              className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
             >
               Scopri i prodotti
-            </Link>
+            </Link></center>
 
-            <Link
-              href="/contatti"
-              className="inline-flex items-center justify-center rounded-2xl border border-[#D9EAF5] bg-white px-6 py-3.5 text-base font-semibold text-[#0F1720] transition hover:bg-[#F6FBFE]"
+            <center><Link
+              href="#contatti"
+              className="inline-flex w-45 items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
             >
               Contattaci
-            </Link>
+            </Link></center>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {["Qualità", "Affidabilità", "Gamma"].map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-[#D9EAF5] bg-white p-4 shadow-sm"
-              >
-                <p className="text-sm font-semibold text-[#046DB6]">{item}</p>
-                <p className="mt-1 text-sm text-[#51606F]">
-                  Soluzioni dolciarie per clienti professionali
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="relative">
   <div className="relative overflow-hidden rounded-[2rem] border border-[#D9EAF5] bg-white shadow-[0_20px_60px_rgba(4,109,182,0.12)]">
     <Image
-      src="/images/DSC_0055.JPG"
-      alt="lavorazione"
-      width={900}
-      height={1100}
-      priority
-      className="h-[420px] w-full object-cover brightness-150 sm:h-[520px] lg:h-[680px]"
-    />
+  key={heroImages[currentImage]}
+  src={heroImages[currentImage]}
+  alt="Lavorazione prodotti dolciari"
+  width={900}
+  height={1100}
+  className="h-[420px] w-full object-cover brightness-110 transition-all duration-700 sm:h-[200px] lg:h-[300px] "
+/>
 
     {/* Sfumatura solo in basso */}
-    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#046DB6]/60 to-transparent" />
+    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#046DB6]/60 to-transparent" />
 
     {/* Testo sopra la sfumatura */}
     <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-      <h2 className="text-2xl font-semibold text-white drop-shadow-md sm:text-3xl">
-        Qualità pensata per te
+      <h2 className="text-2xl font-regular text-white drop-shadow-md sm:text-3xl">
+      
       </h2>
     </div>
   </div>
 </div>
       </div>
+      {/* FEATURES */}
+<div className="mt-6 flex flex-wrap justify-center gap-25">
+  {[
+  {
+    title: "Qualità",
+    text: "Materie di prima qualità eccelsa... Solo il top!",
+  },
+  {
+    title: "Affidabilità",
+    text: "Consegniamo sempre e sempre puntuali!",
+  },
+  {
+    title: "Gamma",
+    text: "Più di 130 prodotti sempre surgelati freschissimi!",
+  },
+].map((item) => (
+  <div
+    key={item.title}
+    className="w-full max-w-[340px] rounded-[1.5rem] border border-[#D9EAF5] bg-white/80 p-5 text-center shadow-sm backdrop-blur-sm"
+  >
+    <p className="text-base font-semiregular text-[#046DB6]">
+      {item.title}
+    </p>
+
+    <p className="mt-2 text-sm leading-6 text-[#7e8994]">
+      {item.text}
+    </p>
+  </div>
+))}
+</div>
     </section>
   );
 }

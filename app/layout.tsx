@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 const myFont = localFont({
   src: "./fonts/Baloo-Regular.ttf",
@@ -13,9 +14,6 @@ const myFont = localFont({
 export const metadata: Metadata = {
   title: "Depagel Group s.r.l.",
   description: "",
-  icons: {
-    icon: "/logo.png",
-  },
 };
 
 export default function RootLayout({
@@ -26,13 +24,14 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body
-  className={`${myFont.variable} font-sans text-[#0F1720] antialiased bg-[url('/SFONDO.png')] bg-[length:750px] bg-right-top bg-fixed bg-no-repeat`}
+  className={`${myFont.variable} font-sans text-[#51606F] antialiased bg-[url('/SFONDO.png')] bg-[length:750px] bg-right-top bg-fixed bg-no-repeat`}
 >
   <div className="min-h-screen bg-white/30">
     <Header />
     {children}
     <Footer />
   </div>
+  <ScrollToTop />
 </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function Footer() {
   return (
     <footer className="border-t-[3px] border-[#046DB6] bg-transparent backdrop-blur-sm">
@@ -24,20 +25,37 @@ export default function Footer() {
 
     {/* CENTER */}
     <div className="flex flex-col items-center text-center">
-      <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-[#046DB6]">
+      <h3 className="text-sm font-regular uppercase tracking-[0.22em] text-[#046DB6]">
         Contatti
       </h3>
 
       <ul className="mt-6 space-y-5 text-sm leading-7 text-[#334155]">
         <li>
-          Via Padre Zeferino Ingenitio, 7
-          <br />
-          Macchia - M. Rovella - SA
+         <Link
+  href="https://maps.app.goo.gl/bA6EeB9jMLTysXYG7"
+  target="_blank"
+  className="transition hover:text-[#046DB6]"
+>
+  Via Padre Zeferino Ingenito, 7<br />
+  Macchia - Montecorvino Rovella (SA)
+</Link>
         </li>
 
-        <li>+39 331 8082957</li>
+        <li><Link
+  href="tel:+393758596044"
+  target="_blank"
+  className="transition hover:text-[#046DB6]"
+>
+  +39 375 8596044
+</Link></li>
 
-        <li>giuseppe.salerno@depagelgroup.com</li>
+        <li><Link
+  href="mailto:amministrazione@depagelgroup.com"
+  target="_blank"
+  className="transition hover:text-[#046DB6]"
+>
+  amministrazione@depagelgroup.com
+</Link></li>
 
         <li>P.IVA 06226990650</li>
 
@@ -47,25 +65,25 @@ export default function Footer() {
 
     {/* RIGHT */}
     <div className="flex flex-col items-center text-center">
-      <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-[#046DB6]">
+      <h3 className="text-sm font-regular uppercase tracking-[0.22em] text-[#046DB6]">
         Navigazione
       </h3>
 
       <ul className="mt-6 space-y-5 text-sm text-[#334155]">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/#home">Home</Link>
         </li>
 
         <li>
-          <Link href="/azienda">Azienda</Link>
+          <Link href="/#azienda">Azienda</Link>
         </li>
 
         <li>
-          <Link href="/prodotti">Prodotti</Link>
+          <Link href="/#prodotti">Prodotti</Link>
         </li>
 
         <li>
-          <Link href="/contatti">Contatti</Link>
+          <Link href="/#contatti">Contatti</Link>
         </li>
       </ul>
     </div>
