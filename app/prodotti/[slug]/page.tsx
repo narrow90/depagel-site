@@ -11,13 +11,12 @@ export default async function ProductDetailPage({
   const { slug } = await params;
 
   const product = products.find(
-  (item) => item.slug === params.slug
-);
+    (item) => item.slug === slug
+  );
 
   if (!product) {
     notFound();
   }
-
 
   return (
     <main className="bg-white/70 backdrop-blur-sm">
