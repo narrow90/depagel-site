@@ -1,62 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
-const products = [
-  {
-    slug: "apolla-o-coda-aragosta",
-    name: "Apolla o coda d’aragosta",
-    category: "Dolci, Tradizionali",
-    image: "/images/products/apolla.jpg",
-    description:
-      "APOLLA O CODA D’ARAGOSTA mille lamelle con bignè, perfetta da farcire e ideale per il settore professionale.",
-    subtitle: "Disponibile in diversi formati.",
-    specs: [
-      {
-        grammatura: "30/35 g",
-        confezione: "6 kg",
-        temperatura: "170-180°",
-        cottura: "28-30 min.",
-      },
-      {
-        grammatura: "40/45 g",
-        confezione: "6 kg",
-        temperatura: "170-180°",
-        cottura: "28-30 min.",
-      },
-      {
-        grammatura: "55/60 g",
-        confezione: "60 pz.",
-        temperatura: "170-180°",
-        cottura: "28-30 min.",
-      },
-      {
-        grammatura: "80/85 g",
-        confezione: "60 pz.",
-        temperatura: "170-180°",
-        cottura: "28-30 min.",
-      },
-    ],
-  },
-
-  {
-    slug: "brioche",
-    name: "Brioche",
-    category: "Dolci, Da Lievitare",
-    image: "/images/products/brioche.jpg",
-    description:
-      "Brioche professionale ideale per bar, hotel e ristorazione.",
-    subtitle: "Qualità costante e lavorazione professionale.",
-    specs: [
-      {
-        grammatura: "50 g",
-        confezione: "60 pz.",
-        temperatura: "170-180°",
-        cottura: "20 min.",
-      },
-    ],
-  },
-];
+import { products } from "@/data/products";
 
 export default async function ProductDetailPage({
   params,
@@ -65,7 +10,9 @@ export default async function ProductDetailPage({
 }) {
   const { slug } = await params;
 
-  const product = products.find((item) => item.slug === slug);
+  const product = products.find(
+  (item) => item.slug === params.slug
+);
 
   if (!product) {
     notFound();

@@ -3,67 +3,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { products } from "@/data/products";
 
 const categories = [
   {
     name: "Dolci",
     children: [
-      { name: "Da Lievitare" },
-      { name: "Pronto Forno" },
-      { name: "Tradizionali" },
-      { name: "Da Friggere" },
     ],
   },
   {
     name: "Salati",
     children: [
-      { name: "Da Lievitare" },
-      { name: "Pronto Forno" },
-      { name: "Tradizionali" },
-      { name: "Da Friggere" },
     ],
   },
   { name: "Basi" },
 ];
 
-const products = [
-  {
-    slug: "apolla-o-coda-aragosta",
-    name: "Apolla o coda d’aragosta",
-    category: "Dolci, Tradizionali",
-    image: "/images/products/apolla.jpg",
-  },
-  {
-    slug: "biscotto-albicocca",
-    name: "Biscotto Albicocca",
-    category: "Dolci, Pronto Forno",
-    image: "/images/products/biscotto-albicocca.jpg",
-  },
-  {
-    slug: "biscotto-nocciolata",
-    name: "Biscotto Nocciolata",
-    category: "Dolci, Pronto Forno",
-    image: "/images/products/biscotto-nocciolata.jpg",
-  },
-  {
-    slug: "bomboloni",
-    name: "Bomboloni",
-    category: "Dolci, Da Friggere",
-    image: "/images/products/bomboloni.jpg",
-  },
-  {
-    slug: "brioche",
-    name: "Brioche",
-    category: "Dolci, Da Lievitare",
-    image: "/images/products/brioche.jpg",
-  },
-  {
-    slug: "castagnette-da-friggere",
-    name: "Castagnette da friggere",
-    category: "Dolci, Tradizionali",
-    image: "/images/products/castagnette.jpg",
-  },
-];
 
 export default function ProdottiPage() {
   const [search, setSearch] = useState("");
@@ -246,14 +201,15 @@ export default function ProdottiPage() {
               {filteredProducts.map((product) => (
                 <Link key={product.slug} href={`/prodotti/${product.slug}`}>
                   <article className="group h-full border-b border-r border-[#D9EAF5] p-8 text-center transition hover:bg-[#F6FBFE]">
-                    <div className="relative mx-auto h-52 w-full">
-                      <Image
-                        src={product.image}
-                        alt={product.name}
-                        fill
-                        className="object-contain transition duration-300 group-hover:scale-105"
-                      />
-                    </div>
+                    <div className="relative mx-auto h-52 w-full overflow-hidden rounded-xl bg-white">
+  <Image
+    src={product.image}
+    alt={product.name}
+    fill
+    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    className="object-contain p-2 transition duration-300 group-hover:scale-105"
+  />
+</div>
 
                     <h3 className="mt-8 text-base font-normal text-[#51606F]">
                       {product.name}
