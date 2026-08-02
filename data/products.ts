@@ -88,7 +88,7 @@ export const products: Product[] = [
     slug: "apollina-o-coda-d-aragosta",
     name: "Apollina o coda d’aragosta",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/apollina-o-coda-d-aragosta.png",
+    image: "/images/prodotti/DOLCI/apollina-o-coda-d-aragosta.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -105,7 +105,7 @@ export const products: Product[] = [
     slug: "brioche-ciock",
     name: "Brioche ciock",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/brioche-ciock.png",
+    image: "/images/prodotti/DOLCI/brioche-ciock.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -122,7 +122,7 @@ export const products: Product[] = [
     slug: "brioche",
     name: "Brioche",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/brioche.png",
+    image: "/images/prodotti/DOLCI/brioche.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -139,7 +139,7 @@ export const products: Product[] = [
     slug: "conchiglia-cioccolato",
     name: "Conchiglia cioccolato",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/conchiglia-cioccolato.png",
+    image: "/images/prodotti/DOLCI/conchiglia-cioccolato.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -156,7 +156,7 @@ export const products: Product[] = [
     slug: "conchiglia-pannalatte-e-amarena",
     name: "Conchiglia pannalatte e amarena",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/conchiglia-pannalatte-e-amarena.png",
+    image: "/images/prodotti/DOLCI/conchiglia-pannalatte-e-amarena.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -173,7 +173,7 @@ export const products: Product[] = [
     slug: "conchiglia-pannalatte",
     name: "Conchiglia pannalatte",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/conchiglia-pannalatte.png",
+    image: "/images/prodotti/DOLCI/conchiglia-pannalatte.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -190,7 +190,7 @@ export const products: Product[] = [
     slug: "cornetto-albicocca",
     name: "Cornetto albicocca",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-albicocca.png",
+    image: "/images/prodotti/DOLCI/cornetto-albicocca.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -207,7 +207,7 @@ export const products: Product[] = [
     slug: "cornetto-biciock",
     name: "Cornetto biciock",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-biciock.png",
+    image: "/images/prodotti/DOLCI/cornetto-biciock.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -224,7 +224,7 @@ export const products: Product[] = [
     slug: "cornetto-bifrutta",
     name: "Cornetto bifrutta",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-bifrutta.png",
+    image: "/images/prodotti/DOLCI/cornetto-bifrutta.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -241,7 +241,7 @@ export const products: Product[] = [
     slug: "cornetto-cereali-e-miele",
     name: "Cornetto cereali e miele",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-cereali-e-miele.png",
+    image: "/images/prodotti/DOLCI/cornetto-cereali-e-miele.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -258,7 +258,7 @@ export const products: Product[] = [
     slug: "cornetto-cereali-vuoto",
     name: "Cornetto cereali vuoto",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-cereali-vuoto.png",
+    image: "/images/prodotti/DOLCI/cornetto-cereali-vuoto.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -275,7 +275,7 @@ export const products: Product[] = [
     slug: "cornetto-cioccolato",
     name: "Cornetto cioccolato",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-cioccolato.png",
+    image: "/images/prodotti/DOLCI/cornetto-cioccolato.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -292,7 +292,7 @@ export const products: Product[] = [
     slug: "cornetto-crema",
     name: "Cornetto crema",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-crema.png",
+    image: "/images/prodotti/DOLCI/cornetto-crema.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -309,7 +309,7 @@ export const products: Product[] = [
     slug: "cornetto-pistacchio",
     name: "Cornetto pistacchio",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-pistacchio.png",
+    image: "/images/prodotti/DOLCI/cornetto-pistacchio.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -326,7 +326,7 @@ export const products: Product[] = [
     slug: "cornetto-vegano",
     name: "Cornetto vegano",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-vegano.png",
+    image: "/images/prodotti/DOLCI/cornetto-vegano.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -343,7 +343,7 @@ export const products: Product[] = [
     slug: "cornetto-vuoto",
     name: "Cornetto vuoto",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/cornetto-vuoto.png",
+    image: "/images/prodotti/DOLCI/cornetto-vuoto.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -360,7 +360,7 @@ export const products: Product[] = [
     slug: "danese-pasta-di-mandorle",
     name: "Danese pasta di mandorle",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/danese-pasta-di-mandorle.png",
+    image: "/images/prodotti/DOLCI/danese-pasta-di-mandorle.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -377,7 +377,7 @@ export const products: Product[] = [
     slug: "fagottino-cioccolato",
     name: "Fagottino cioccolato",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/fagottino-cioccolato.png",
+    image: "/images/prodotti/DOLCI/fagottino-cioccolato.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -394,7 +394,7 @@ export const products: Product[] = [
     slug: "fagottino-crema",
     name: "Fagottino crema",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/fagottino-crema.png",
+    image: "/images/prodotti/DOLCI/fagottino-crema.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -411,7 +411,7 @@ export const products: Product[] = [
     slug: "fagottino-vuoto",
     name: "Fagottino vuoto",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/fagottino-vuoto.png",
+    image: "/images/prodotti/DOLCI/fagottino-vuoto.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -428,7 +428,7 @@ export const products: Product[] = [
     slug: "girella-cioccolato",
     name: "Girella cioccolato",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/girella-cioccolato.png",
+    image: "/images/prodotti/DOLCI/girella-cioccolato.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -445,7 +445,7 @@ export const products: Product[] = [
     slug: "girella-uvetta",
     name: "Girella uvetta",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/girella-uvetta.png",
+    image: "/images/prodotti/DOLCI/girella-uvetta.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -462,7 +462,7 @@ export const products: Product[] = [
     slug: "lemoncrema",
     name: "Lemoncrema",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/lemoncrema.png",
+    image: "/images/prodotti/DOLCI/lemoncrema.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -479,7 +479,7 @@ export const products: Product[] = [
     slug: "maxi-ciambella-zuccherata",
     name: "Maxi ciambella zuccherata",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/maxi-ciambella-zuccherata.png",
+    image: "/images/prodotti/DOLCI/maxi-ciambella-zuccherata.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -496,7 +496,7 @@ export const products: Product[] = [
     slug: "misto-mignon",
     name: "Misto mignon",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/misto-mignon.png",
+    image: "/images/prodotti/DOLCI/misto-mignon.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -513,7 +513,7 @@ export const products: Product[] = [
     slug: "panciock",
     name: "Panciock",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/panciock.png",
+    image: "/images/prodotti/DOLCI/panciock.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -530,7 +530,7 @@ export const products: Product[] = [
     slug: "panfrutta",
     name: "Panfrutta",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/panfrutta.png",
+    image: "/images/prodotti/DOLCI/panfrutta.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -547,7 +547,7 @@ export const products: Product[] = [
     slug: "pasticciotto-leccese",
     name: "Pasticciotto leccese",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/pasticciotto-leccese.png",
+    image: "/images/prodotti/DOLCI/pasticciotto-leccese.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -564,7 +564,7 @@ export const products: Product[] = [
     slug: "sfogliata-frolla",
     name: "Sfogliata frolla",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/sfogliata-frolla.png",
+    image: "/images/prodotti/DOLCI/sfogliata-frolla.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -581,7 +581,7 @@ export const products: Product[] = [
     slug: "sfogliata-riccia",
     name: "Sfogliata riccia",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/sfogliata-riccia.png",
+    image: "/images/prodotti/DOLCI/sfogliata-riccia.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -598,7 +598,7 @@ export const products: Product[] = [
     slug: "strudel-mela",
     name: "Strudel mela",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/strudel-mela.png",
+    image: "/images/prodotti/DOLCI/strudel-mela.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -615,7 +615,7 @@ export const products: Product[] = [
     slug: "zeppola",
     name: "Zeppola",
     category: "Dolci",
-    image: "/images/prodotti/Dolci/zeppola.png",
+    image: "/images/prodotti/DOLCI/zeppola.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -632,7 +632,7 @@ export const products: Product[] = [
     slug: "arancino-bianco",
     name: "Arancino bianco",
     category: "Salati",
-    image: "/images/prodotti/Salati/arancino-bianco.png",
+    image: "/images/prodotti/SALATI/arancino-bianco.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -649,7 +649,7 @@ export const products: Product[] = [
     slug: "arancino-rosso",
     name: "Arancino rosso",
     category: "Salati",
-    image: "/images/prodotti/Salati/arancino-rosso.png",
+    image: "/images/prodotti/SALATI/arancino-rosso.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -666,7 +666,7 @@ export const products: Product[] = [
     slug: "calzoncelli",
     name: "Calzoncelli",
     category: "Salati",
-    image: "/images/prodotti/Salati/calzoncelli.png",
+    image: "/images/prodotti/SALATI/calzoncelli.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -683,7 +683,7 @@ export const products: Product[] = [
     slug: "calzone",
     name: "Calzone",
     category: "Salati",
-    image: "/images/prodotti/Salati/calzone.png",
+    image: "/images/prodotti/SALATI/calzone.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -700,7 +700,7 @@ export const products: Product[] = [
     slug: "crocche",
     name: "Crocchè",
     category: "Salati",
-    image: "/images/prodotti/Salati/crocche.png",
+    image: "/images/prodotti/SALATI/crocche.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -717,7 +717,7 @@ export const products: Product[] = [
     slug: "frittatina-di-pasta",
     name: "Frittatina di pasta",
     category: "Salati",
-    image: "/images/prodotti/Salati/frittatina-di-pasta.png",
+    image: "/images/prodotti/SALATI/frittatina-di-pasta.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -734,7 +734,7 @@ export const products: Product[] = [
     slug: "frittelle-d-alghe",
     name: "Frittelle d’alghe",
     category: "Salati",
-    image: "/images/prodotti/Salati/frittelle-d-alghe.png",
+    image: "/images/prodotti/SALATI/frittelle-d-alghe.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -751,7 +751,7 @@ export const products: Product[] = [
     slug: "fritto-misto",
     name: "Fritto misto",
     category: "Salati",
-    image: "/images/prodotti/Salati/fritto-misto.png",
+    image: "/images/prodotti/SALATI/fritto-misto.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -768,7 +768,7 @@ export const products: Product[] = [
     slug: "panino-napoletano",
     name: "Panino napoletano",
     category: "Salati",
-    image: "/images/prodotti/Salati/panino-napoletano.png",
+    image: "/images/prodotti/SALATI/panino-napoletano.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -785,7 +785,7 @@ export const products: Product[] = [
     slug: "pizza",
     name: "Pizza",
     category: "Salati",
-    image: "/images/prodotti/Salati/pizza.png",
+    image: "/images/prodotti/SALATI/pizza.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -802,7 +802,7 @@ export const products: Product[] = [
     slug: "pizzette",
     name: "Pizzette",
     category: "Salati",
-    image: "/images/prodotti/Salati/pizzette.png",
+    image: "/images/prodotti/SALATI/pizzette.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -819,7 +819,7 @@ export const products: Product[] = [
     slug: "rustico-mignon",
     name: "Rustico mignon",
     category: "Salati",
-    image: "/images/prodotti/Salati/rustico-mignon.png",
+    image: "/images/prodotti/SALATI/rustico-mignon.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
@@ -836,7 +836,7 @@ export const products: Product[] = [
     slug: "wurstellone",
     name: "Wurstellone",
     category: "Salati",
-    image: "/images/prodotti/Salati/wurstellone.png",
+    image: "/images/prodotti/SALATI/wurstellone.png",
     description: "Descrizione del prodotto da completare.",
     subtitle: "Disponibile in diversi formati.",
     specs: [
