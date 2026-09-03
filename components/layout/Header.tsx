@@ -78,7 +78,9 @@ export default function Header() {
 
         {/* RIGHT CTA DESKTOP */}
         <Link
-          href="#"
+          href="/catalogo.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden rounded-full bg-[#046DB6] px-7 py-3 text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] lg:inline-flex"
         >
           Catalogo prodotti
