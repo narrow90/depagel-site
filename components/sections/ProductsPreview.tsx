@@ -1,31 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 const products = [
   {
     title: "Dolci",
     description:
       "Una linea sviluppata per offrire morbidezza, gusto e qualità costante.",
     image: "/images/dolce.jpg",
+    href: "/prodotti?categoria=Dolci",
   },
   {
     title: "Salati",
     description:
       "Referenze classiche e assortite pensate per il canale professionale.",
     image: "/images/salato.jpg",
+    href: "/prodotti?categoria=Salati",
   },
   {
     title: "Basi",
     description:
       "Specialità dolciarie curate nella presentazione e nella resa finale.",
     image: "/images/basi.jpg",
+    href: "/prodotti?categoria=Basi",
   },
 ];
 
 export default function ProductsPreview() {
   return (
-    <section id="prodotti" className="bg-transparent py-20 sm:py-24 scroll-mt-24">
+    <section
+      id="prodotti"
+      className="bg-transparent py-20 sm:py-24 scroll-mt-24"
+    >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="max-w-3xl">
           <span className="inline-flex w-40 items-center justify-center rounded-full bg-[#046DB6] px-7 py-1 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto">
@@ -58,8 +63,6 @@ export default function ProductsPreview() {
                 />
 
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#046DB6]/60 to-transparent p-3">
-                 
-
                   <h3 className="mt-2 text-2xl font-regular text-white">
                     {product.title}
                   </h3>
@@ -73,11 +76,11 @@ export default function ProductsPreview() {
 
                 <div className="mt-6">
                   <Link
-                    href="/prodotti"
+                    href={product.href}
                     className="inline-flex w-full items-center justify-center rounded-full bg-[#046DB6] px-7 py-3 text-center text-sm font-regular text-white shadow-lg shadow-[#046DB6]/20 transition hover:bg-[#035A95] sm:w-auto"
                   >
                     Scopri di più
-                    <span>→</span>
+                    <span className="ml-1">→</span>
                   </Link>
                 </div>
               </div>
