@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { products } from "@/data/products";
 
 const categories = [
@@ -12,8 +13,20 @@ const categories = [
 ];
 
 export default function ProdottiPage() {
+  const searchParams = useSearchParams();
+
+  const categoriaUrl = searchParams.get("categoria");
+
+  const categoriaIniziale =
+    categoriaUrl === "Dolci" ||
+    categoriaUrl === "Salati" ||
+    categoriaUrl === "Basi"
+      ? categoriaUrl
+      : "Tutti";
+
   const [search, setSearch] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("Tutti");
+  const [selectedCategory, setSelectedCategory] =
+    useState(categoriaIniziale);
   const [sort, setSort] = useState("default");
 
   const categoriesWithCount = useMemo(() => {
@@ -112,7 +125,9 @@ export default function ProdottiPage() {
                 <button
                   key={category.name}
                   type="button"
-                  onClick={() => setSelectedCategory(category.name)}
+                  onClick={() =>
+                    setSelectedCategory(category.name)
+                  }
                   className={`flex w-full items-center justify-between font-normal transition ${
                     selectedCategory === category.name
                       ? "text-[#046DB6]"
@@ -133,13 +148,20 @@ export default function ProdottiPage() {
           <div>
             <div className="mb-8 flex flex-col gap-4 rounded-[1.5rem] border border-[#D9EAF5] bg-white/80 p-5 shadow-sm md:flex-row md:items-center md:justify-between">
               <div className="text-sm text-[#51606F]">
-                <Link href="/" className="transition hover:text-[#046DB6]">
+                <Link
+                  href="/"
+                  className="transition hover:text-[#046DB6]"
+                >
                   Home
                 </Link>
 
                 <span className="mx-2">/</span>
 
-                <span>Prodotti</span>
+                <span>
+                  {selectedCategory === "Tutti"
+                    ? "Prodotti"
+                    : selectedCategory}
+                </span>
               </div>
 
               <div className="flex flex-wrap items-center gap-4">
@@ -156,7 +178,9 @@ export default function ProdottiPage() {
                   aria-label="Ordina prodotti"
                   className="rounded-xl border border-[#D9EAF5] bg-white px-4 py-2 text-sm text-[#51606F] outline-none transition focus:border-[#046DB6]"
                 >
-                  <option value="default">Ordine predefinito</option>
+                  <option value="default">
+                    Ordine predefinito
+                  </option>
                   <option value="az">Nome A-Z</option>
                   <option value="category">Categoria</option>
                 </select>
