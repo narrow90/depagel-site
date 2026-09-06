@@ -77,19 +77,23 @@ export default async function ProductDetailPage({
                 <thead className="bg-[#D1F0FC]/60 text-[#51606F]">
                   <tr>
                     <th className="px-5 py-4 font-regular">
-                      Grammatura
+                      Grammatura prodotto
                     </th>
 
                     <th className="px-5 py-4 font-regular">
-                      pz./qt. confezione
+                      pz./kg nella confezione
                     </th>
 
                     <th className="px-5 py-4 font-regular">
-                      °C
+                      Tempi di lievitazione
                     </th>
 
                     <th className="px-5 py-4 font-regular">
-                      Cottura
+                      Tempi di cottura (minuti)
+                    </th>
+
+                    <th className="px-5 py-4 font-regular">
+                      Temperatura di cottura
                     </th>
                   </tr>
                 </thead>
@@ -98,7 +102,7 @@ export default async function ProductDetailPage({
                   {product.specs.map((row, index) => (
                     <tr
                       key={index}
-                      className="border-t border-[#D9EAF5] text-[#7e8994]"
+                      className="border-t border-[#D9EAF5] text-[#7e8994] text-center"
                     >
                       <td className="px-5 py-5">
                         {row.grammatura}
@@ -109,11 +113,15 @@ export default async function ProductDetailPage({
                       </td>
 
                       <td className="px-5 py-5">
-                        {row.temperatura}
+                        {row.lievitazione}
                       </td>
 
                       <td className="px-5 py-5">
                         {row.cottura}
+                      </td>
+
+                      <td className="px-5 py-5">
+                        {row.temperatura}
                       </td>
                     </tr>
                   ))}

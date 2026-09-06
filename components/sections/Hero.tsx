@@ -99,7 +99,7 @@ export default function Hero() {
   },
   {
     title: "Affidabilità",
-    text: "Consegniamo sempre e sempre puntuali!",
+    text: "Consegnamo sempre e sempre puntuali!",
   },
   {
     title: "Gamma",
