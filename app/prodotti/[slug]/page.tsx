@@ -143,64 +143,63 @@ export default async function ProductDetailPage({
             </div>
 
             {/* DESKTOP / TABLET TABLE */}
-            <div className="mt-10 hidden w-full overflow-hidden rounded-[1.5rem] border border-[#D9EAF5] bg-white sm:block">
-              <div className="w-full overflow-x-auto">
-                <table className="w-full min-w-[760px] text-left text-sm text-[#51606F]">
-                  <thead className="bg-[#D1F0FC]/60 text-[#51606F]">
-                    <tr>
-                      <th className="px-5 py-4 font-normal">
-                        Grammatura prodotto
-                      </th>
+<div className="mt-10 hidden w-full overflow-hidden rounded-[1.5rem] border border-[#D9EAF5] bg-white sm:block">
+  <table className="w-full table-fixed text-center text-xs text-[#51606F] lg:text-sm">
+    <thead className="bg-[#D1F0FC]/60 text-[#51606F]">
+      <tr>
+        <th className="w-1/5 px-2 py-4 font-normal leading-5 lg:px-3">
+          Grammatura prodotto
+        </th>
 
-                      <th className="px-5 py-4 font-normal">
-                        Pz./kg nella confezione
-                      </th>
+        <th className="w-1/5 px-2 py-4 font-normal leading-5 lg:px-3">
+          Pz./kg nella confezione
+        </th>
 
-                      <th className="px-5 py-4 font-normal">
-                        Tempi di lievitazione
-                      </th>
+        <th className="w-1/5 px-2 py-4 font-normal leading-5 lg:px-3">
+          Tempi di lievitazione
+        </th>
 
-                      <th className="px-5 py-4 font-normal">
-                        Tempi di cottura (minuti)
-                      </th>
+        <th className="w-1/5 px-2 py-4 font-normal leading-5 lg:px-3">
+          Tempi di cottura
+          <span className="block">(minuti)</span>
+        </th>
 
-                      <th className="px-5 py-4 font-normal">
-                        Temperatura di cottura
-                      </th>
-                    </tr>
-                  </thead>
+        <th className="w-1/5 px-2 py-4 font-normal leading-5 lg:px-3">
+          Temperatura di cottura
+        </th>
+      </tr>
+    </thead>
 
-                  <tbody>
-                    {product.specs.map((row, index) => (
-                      <tr
-                        key={index}
-                        className="border-t border-[#D9EAF5] text-center text-[#7e8994]"
-                      >
-                        <td className="px-5 py-5">
-                          {row.grammatura || "—"}
-                        </td>
+    <tbody>
+      {product.specs.map((row, index) => (
+        <tr
+          key={index}
+          className="border-t border-[#D9EAF5] text-[#7e8994]"
+        >
+          <td className="break-words px-2 py-5 lg:px-3">
+            {row.grammatura || "—"}
+          </td>
 
-                        <td className="px-5 py-5">
-                          {row.confezione || "—"}
-                        </td>
+          <td className="break-words px-2 py-5 lg:px-3">
+            {row.confezione || "—"}
+          </td>
 
-                        <td className="px-5 py-5">
-                          {row.lievitazione || "—"}
-                        </td>
+          <td className="break-words px-2 py-5 lg:px-3">
+            {row.lievitazione || "—"}
+          </td>
 
-                        <td className="px-5 py-5">
-                          {row.cottura || "—"}
-                        </td>
+          <td className="break-words px-2 py-5 lg:px-3">
+            {row.cottura || "—"}
+          </td>
 
-                        <td className="px-5 py-5">
-                          {row.temperatura || "—"}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+          <td className="break-words px-2 py-5 lg:px-3">
+            {row.temperatura || "—"}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
             {/* BUTTONS */}
             <div className="mt-8 flex w-full flex-col gap-4 sm:flex-row">
